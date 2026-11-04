@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <title>Destins</title>
+  <meta name="description" content="Devine la personnalité historique à partir de sa naissance et de sa mort.">
+  <meta name="theme-color" content="#f6f1e7">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Destins">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="icone.png">
+  <link rel="icon" href="icone.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app" class="app">
+
+    <!-- ÉCRAN D'ACCUEIL -->
+    <section id="ecran-accueil" class="ecran accueil">
+      <div class="accueil-contenu">
+        <h1 class="titre">Destins</h1>
+        <p class="sous-titre">Une naissance, une mort, deux points sur la carte.<br>Sauras-tu dire qui c'était&nbsp;?</p>
+
+        <fieldset class="choix">
+          <legend>Niveau</legend>
+          <div class="segment" role="radiogroup">
+            <label><input type="radio" name="niveau" value="facile" checked><span>Facile</span></label>
+            <label><input type="radio" name="niveau" value="difficile"><span>Difficile</span></label>
+          </div>
+          <p class="aide" id="aide-niveau"></p>
+        </fieldset>
+
+        <fieldset class="choix">
+          <legend>Mode</legend>
+          <div class="segment" role="radiogroup">
+            <label><input type="radio" name="mode" value="classique" checked><span>Partie classique</span></label>
+            <label><input type="radio" name="mode" value="marathon"><span>Marathon</span></label>
+          </div>
+          <p class="aide" id="aide-mode"></p>
+        </fieldset>
+
+        <p class="record-accueil">Meilleur score : <strong id="record-accueil">0</strong></p>
+        <button id="bouton-jouer" class="bouton principal" type="button">Jouer</button>
+      </div>
+    </section>
+
+    <!-- ÉCRAN DE JEU -->
+    <section id="ecran-jeu" class="ecran jeu" hidden>
+      <header class="barre-haut">
+        <button id="bouton-quitter" class="bouton-icone" type="button" aria-label="Quitter la partie">✕</button>
+        <div class="infos">
+          <span class="progression" id="progression">1 / 10</span>
+          <span class="vies" id="vies" aria-label="Vies"></span>
+        </div>
+        <div class="score">Score <strong id="score">0</strong></div>
+      </header>
+      <div class="chrono" aria-hidden="true"><div class="chrono-barre" id="chrono-barre"></div></div>
+
+      <div class="zone-carte">
+        <div id="carte" class="carte"></div>
+        <div class="chrono-texte" id="chrono-texte" role="timer" aria-live="off">45</div>
+        <div id="revelation" class="revelation" hidden aria-live="polite">
+          <p class="verdict" id="verdict"></p>
+          <h2 class="nom" id="revelation-nom"></h2>
+          <p class="bio" id="revelation-bio"></p>
+        </div>
+        <div id="message" class="message" aria-live="assertive"></div>
+      </div>
+
+      <form id="formulaire" class="barre-reponse" autocomplete="off">
+        <div id="zone-saisie" class="zone-saisie">
+          <button id="bouton-passer" class="bouton secondaire" type="button">Passer</button>
+          <input id="saisie" class="saisie" type="text" placeholder="Qui est-ce ?" aria-label="Ta réponse"
+                 autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="send">
+          <button id="bouton-valider" class="bouton principal" type="submit">Valider</button>
+        </div>
+        <button id="bouton-suivant" class="bouton principal large" type="button" hidden>Suivant</button>
+      </form>
+    </section>
+
+    <!-- ÉCRAN DE FIN -->
+    <section id="ecran-fin" class="ecran fin" hidden>
+      <div class="fin-contenu">
+        <p class="fin-mode" id="fin-mode"></p>
+        <h2 class="fin-titre">Partie terminée</h2>
+        <div class="fin-scores">
+          <div><span>Score</span><strong id="fin-score">0</strong></div>
+          <div><span>Meilleur score</span><strong id="fin-record">0</strong></div>
+        </div>
+        <p class="nouveau-record" id="nouveau-record" hidden>Nouveau record&nbsp;!</p>
+        <ol class="recap" id="recap"></ol>
+      </div>
+      <div class="fin-boutons">
+        <button id="bouton-accueil" class="bouton secondaire" type="button">Accueil</button>
+        <button id="bouton-rejouer" class="bouton principal" type="button">Rejouer</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="vendor/d3-array.min.js"></script>
+  <script src="vendor/d3-geo.min.js"></script>
+  <script src="vendor/topojson-client.min.js"></script>
+  <script src="data/carte-monde.js"></script>
+  <script src="data/personnalites.js"></script>
+  <script src="js/reponses.js"></script>
+  <script src="js/carte.js"></script>
+  <script src="js/jeu.js"></script>
+</body>
+</html>

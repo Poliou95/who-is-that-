@@ -1,0 +1,217 @@
+:root {
+  color-scheme: light;
+  --papier: #f6f1e7;
+  --papier-fonce: #ece4d3;
+  --encre: #2b2620;
+  --encre-douce: #6b6256;
+  --ocean: #dfe7ea;
+  --terre: #fbf8f1;
+  --frontiere: #b9ad99;
+  --naissance: #2f6b4f;
+  --deces: #8a2c3b;
+  --accent: #2b2620;
+  --orange: #c77a12;
+  --rouge: #b3261e;
+  --succes: #2f6b4f;
+  --carte-ombre: 0 1px 3px rgba(43, 38, 32, .18), 0 4px 14px rgba(43, 38, 32, .10);
+  --serif: "New York", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --haut: env(safe-area-inset-top, 0px);
+  --bas: env(safe-area-inset-bottom, 0px);
+}
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; height: 100%; overflow: hidden;
+  background: var(--papier); color: var(--encre);
+  font-family: var(--sans);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+}
+button, input { font: inherit; color: inherit; }
+[hidden] { display: none !important; }
+
+/* L'application suit la zone visible réelle (clavier de l'iPhone compris). */
+.app {
+  position: fixed; left: 0; right: 0; top: 0;
+  height: 100%;
+  display: flex; flex-direction: column;
+  max-width: 640px; margin: 0 auto;
+}
+.ecran { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+
+/* ---------- Boutons ---------- */
+.bouton {
+  border: 0; border-radius: 12px; padding: 0 18px; min-height: 48px;
+  font-weight: 600; font-size: 17px; cursor: pointer;
+  touch-action: manipulation;
+}
+.bouton.principal { background: var(--accent); color: var(--papier); }
+.bouton.secondaire { background: var(--papier-fonce); color: var(--encre); }
+.bouton:active { transform: scale(.97); }
+.bouton.large { width: 100%; }
+.bouton-icone {
+  border: 0; background: transparent; width: 40px; height: 40px; border-radius: 20px;
+  font-size: 18px; color: var(--encre-douce); cursor: pointer;
+}
+
+/* ---------- Accueil ---------- */
+.accueil { overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.accueil-contenu {
+  padding: calc(var(--haut) + 40px) 20px calc(var(--bas) + 28px);
+  display: flex; flex-direction: column; gap: 20px; min-height: 100%;
+}
+.titre {
+  font-family: var(--serif); font-weight: 600; font-size: 52px; letter-spacing: .5px;
+  margin: 0; text-align: center;
+}
+.sous-titre { margin: -6px 0 6px; text-align: center; color: var(--encre-douce); line-height: 1.45; }
+.choix { border: 0; margin: 0; padding: 0; }
+.choix legend {
+  font-size: 13px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--encre-douce);
+  margin-bottom: 8px; padding: 0;
+}
+.segment {
+  display: flex; background: var(--papier-fonce); border-radius: 14px; padding: 4px; gap: 4px;
+}
+.segment label { flex: 1; position: relative; }
+.segment input { position: absolute; opacity: 0; inset: 0; margin: 0; }
+.segment span {
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  min-height: 46px; border-radius: 10px; font-weight: 600; cursor: pointer; padding: 0 6px;
+}
+.segment input:checked + span { background: var(--terre); box-shadow: var(--carte-ombre); }
+.segment input:focus-visible + span { outline: 2px solid var(--encre); outline-offset: 2px; }
+.aide { margin: 8px 2px 0; font-size: 14px; color: var(--encre-douce); line-height: 1.4; }
+.record-accueil { text-align: center; margin: auto 0 0; color: var(--encre-douce); }
+.record-accueil strong { color: var(--encre); font-variant-numeric: tabular-nums; }
+#bouton-jouer { min-height: 56px; font-size: 19px; }
+
+/* ---------- Jeu ---------- */
+.barre-haut {
+  display: flex; align-items: center; gap: 8px;
+  padding: calc(var(--haut) + 6px) 12px 6px 6px;
+}
+.infos { flex: 1; display: flex; align-items: center; gap: 10px; min-width: 0; }
+.progression { font-size: 15px; color: var(--encre-douce); font-variant-numeric: tabular-nums; }
+.vies { color: var(--deces); letter-spacing: 2px; font-size: 17px; }
+.vies .perdue { color: var(--frontiere); }
+.score { font-size: 15px; color: var(--encre-douce); }
+.score strong { font-size: 20px; color: var(--encre); font-variant-numeric: tabular-nums; margin-left: 4px; }
+
+.chrono { height: 6px; background: var(--papier-fonce); margin: 0 12px; border-radius: 3px; overflow: hidden; }
+.chrono-barre { height: 100%; width: 100%; background: var(--encre); transform-origin: left; border-radius: 3px; }
+.chrono-texte {
+  position: absolute; z-index: 5; top: 10px; right: 10px;
+  font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums;
+  background: rgba(251, 248, 241, .92); border-radius: 12px; padding: 2px 10px; box-shadow: var(--carte-ombre);
+}
+.attention .chrono-barre { background: var(--orange); }
+.attention .chrono-texte { color: var(--orange); }
+.urgence .chrono-barre { background: var(--rouge); }
+.urgence .chrono-texte { color: var(--rouge); }
+
+.zone-carte { position: relative; flex: 1; min-height: 0; margin: 8px 12px 0; }
+.carte {
+  position: absolute; inset: 0; overflow: hidden; border-radius: 16px;
+  background: var(--ocean); box-shadow: inset 0 0 0 1px rgba(43, 38, 32, .08);
+}
+.carte-svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.ocean { fill: var(--ocean); }
+.pays { fill: var(--terre); stroke: var(--frontiere); stroke-width: .8px; vector-effect: non-scaling-stroke; stroke-linejoin: round; }
+.frontieres { fill: none; stroke: var(--frontiere); stroke-width: .8px; vector-effect: non-scaling-stroke; stroke-linejoin: round; }
+
+.calque-marqueurs { position: absolute; inset: 0; pointer-events: none; }
+.marqueur {
+  position: absolute; left: -9px; top: -9px; width: 18px; height: 18px; border-radius: 50%;
+  border: 3px solid #fff; box-shadow: 0 1px 4px rgba(0, 0, 0, .35);
+}
+.marqueur.naissance { background: var(--naissance); }
+.marqueur.deces { background: var(--deces); }
+.marqueur.les-deux { background: linear-gradient(90deg, var(--naissance) 50%, var(--deces) 50%); }
+.legende {
+  position: absolute; left: 0; top: 0;
+  background: #fff; border-radius: 10px; padding: 6px 10px;
+  box-shadow: var(--carte-ombre); font-size: 14px; line-height: 1.35;
+  display: flex; flex-direction: column; white-space: nowrap;
+}
+.legende .lieu { font-weight: 700; white-space: normal; max-width: 210px; }
+.legende .ligne { display: flex; align-items: center; gap: 6px; color: var(--encre-douce); }
+.legende .ligne strong { color: var(--encre); font-variant-numeric: tabular-nums; }
+.pastille { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+.ligne.naissance .pastille { background: var(--naissance); }
+.ligne.deces .pastille { background: var(--deces); }
+
+.revelation {
+  position: absolute; left: 10px; right: 10px; bottom: 10px; z-index: 4;
+  background: var(--terre); border-radius: 14px; padding: 14px 16px; box-shadow: var(--carte-ombre);
+  animation: monter .25s ease-out;
+}
+.verdict { margin: 0 0 2px; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+.verdict.gagne { color: var(--succes); }
+.verdict.perdu { color: var(--deces); }
+.nom { font-family: var(--serif); font-size: 26px; margin: 0 0 6px; line-height: 1.15; }
+.bio { margin: 0; color: var(--encre-douce); line-height: 1.45; font-size: 15px; }
+@keyframes monter { from { transform: translateY(12px); opacity: 0; } to { transform: none; opacity: 1; } }
+
+.message {
+  position: absolute; left: 50%; bottom: 12px; z-index: 6; transform: translateX(-50%);
+  background: var(--encre); color: var(--papier); padding: 8px 16px; border-radius: 20px;
+  font-weight: 600; font-size: 15px; white-space: nowrap;
+  opacity: 0; transition: opacity .2s; pointer-events: none;
+}
+.message.visible { opacity: 1; }
+
+.barre-reponse {
+  padding: 10px 12px calc(var(--bas) + 10px);
+  background: var(--papier);
+}
+.clavier-ouvert .barre-reponse { padding-bottom: 8px; }
+.zone-saisie { display: flex; gap: 8px; align-items: stretch; }
+.zone-saisie .bouton { padding: 0 12px; }
+.saisie {
+  flex: 1; min-width: 0; min-height: 48px; border-radius: 12px;
+  border: 2px solid var(--papier-fonce); background: #fff; padding: 0 12px;
+  font-size: 17px; /* 16 px minimum : évite le zoom automatique de Safari */
+  outline: none; -webkit-appearance: none; appearance: none;
+}
+.saisie:focus { border-color: var(--encre); }
+.saisie.erreur { border-color: var(--rouge); animation: secouer .3s; }
+@keyframes secouer { 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+
+/* ---------- Fin ---------- */
+.fin { overflow: hidden; }
+.fin-contenu {
+  flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch;
+  padding: calc(var(--haut) + 32px) 20px 16px; text-align: center;
+}
+.fin-mode { margin: 0; color: var(--encre-douce); text-transform: uppercase; letter-spacing: 1.2px; font-size: 13px; }
+.fin-titre { font-family: var(--serif); font-size: 34px; margin: 6px 0 20px; }
+.fin-scores { display: flex; gap: 12px; }
+.fin-scores > div {
+  flex: 1; background: var(--terre); border-radius: 14px; padding: 14px 8px; box-shadow: var(--carte-ombre);
+  display: flex; flex-direction: column; gap: 4px;
+}
+.fin-scores span { font-size: 13px; color: var(--encre-douce); text-transform: uppercase; letter-spacing: 1px; }
+.fin-scores strong { font-size: 34px; font-variant-numeric: tabular-nums; }
+.nouveau-record { color: var(--succes); font-weight: 700; font-size: 18px; margin: 16px 0 0; }
+.recap { list-style: none; padding: 0; margin: 22px 0 0; text-align: left; }
+.recap li {
+  display: flex; align-items: center; gap: 10px; padding: 10px 4px;
+  border-bottom: 1px solid var(--papier-fonce);
+}
+.recap .signe { width: 24px; text-align: center; font-weight: 700; }
+.recap .ok .signe { color: var(--succes); }
+.recap .ko .signe { color: var(--deces); }
+.recap .recap-nom { flex: 1; }
+.recap .points { color: var(--encre-douce); font-variant-numeric: tabular-nums; }
+.fin-boutons { display: flex; gap: 10px; padding: 12px 20px calc(var(--bas) + 16px); }
+.fin-boutons .bouton { flex: 1; min-height: 54px; }
+
+/* Petits écrans (iPhone SE…) */
+@media (max-width: 360px) {
+  .zone-saisie { gap: 6px; }
+  .zone-saisie .bouton { padding: 0 10px; font-size: 16px; }
+  .saisie { padding: 0 10px; }
+}

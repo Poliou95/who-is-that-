@@ -3,6 +3,10 @@
 global.window = globalThis;
 require("../data/personnalites.js");
 require("../data/personnalites-expert.js");
+require("../data/traductions-en.js");
+require("../data/lieux-en.js");
+require("../data/personnalites-ajouts.js");
+require("../js/i18n.js");
 var R = require("../js/reponses.js");
 
 var erreurs = 0;

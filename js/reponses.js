@@ -42,7 +42,8 @@
   }
 
   function variantes(perso) {
-    return [perso.nom].concat(perso.reponses).map(compacter);
+    var en = (typeof window !== "undefined" && window.Langue) ? window.Langue.reponsesEn(perso) : [];
+    return [perso.nom].concat(perso.reponses, en).map(compacter);
   }
 
   // Les noms avec un numéro (Louis XIV, Henri IV, Mehmed II…) doivent être
@@ -54,7 +55,8 @@
     var c = compacter(saisie);
     if (c.length < 2) return false;
     var saisieStricte = estStricte(saisie);
-    return [perso.nom].concat(perso.reponses).some(function (brut) {
+    var en = (typeof window !== "undefined" && window.Langue) ? window.Langue.reponsesEn(perso) : [];
+    return [perso.nom].concat(perso.reponses, en).some(function (brut) {
       var v = compacter(brut);
       return distance(c, v) <= (saisieStricte || estStricte(brut) ? 0 : tolerance(v.length));
     });

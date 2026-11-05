@@ -293,7 +293,7 @@
     P("Catherine II",
       ["Szczecin", 1729, 53.428, 14.553], ["Saint-Pétersbourg", 1796, 59.939, 30.316],
       "Princesse allemande devenue impératrice de Russie, protectrice des philosophes des Lumières.",
-      ["catherine ii", "catherine 2", "catherine la grande", "catherine", "catherine de russie", "catherine the great"]),
+      ["catherine ii", "catherine 2", "catherine la grande", "catherine de russie", "catherine the great"]),
     P("Benjamin Franklin",
       ["Boston", 1706, 42.358, -71.060], ["Philadelphie", 1790, 39.952, -75.164],
       "Imprimeur, savant inventeur du paratonnerre et l'un des pères fondateurs des États-Unis.",

@@ -116,11 +116,11 @@
 
     if (memeLieu) {
       marqueurs.push(creerMarqueur(pn, "les-deux", [
-        ligne("naissance", "Naissance", n), ligne("deces", "Décès", d)
-      ], avecLieux ? n.lieu : null));
+        ligne("naissance", Langue.t("naissance"), n), ligne("deces", Langue.t("deces"), d)
+      ], avecLieux ? Langue.lieu(n) : null));
     } else {
-      marqueurs.push(creerMarqueur(pn, "naissance", [ligne("naissance", "Naissance", n)], avecLieux ? n.lieu : null));
-      marqueurs.push(creerMarqueur(pd, "deces", [ligne("deces", "Décès", d)], avecLieux ? d.lieu : null));
+      marqueurs.push(creerMarqueur(pn, "naissance", [ligne("naissance", Langue.t("naissance"), n)], avecLieux ? Langue.lieu(n) : null));
+      marqueurs.push(creerMarqueur(pd, "deces", [ligne("deces", Langue.t("deces"), d)], avecLieux ? Langue.lieu(d) : null));
     }
     cible = [pn, pd];
     recadrer(true);
@@ -191,8 +191,8 @@
   }
 
   function formaterAnnee(l) {
-    var t = l.an < 0 ? (-l.an) + "\u00a0av.\u00a0J.-C." : String(l.an);
-    return (l.vers ? "vers\u00a0" : "") + t;
+    var t = l.an < 0 ? (-l.an) + "\u00a0" + Langue.t("avJC") : String(l.an);
+    return (l.vers ? Langue.t("vers") + "\u00a0" : "") + t;
   }
 
   function echapper(s) {

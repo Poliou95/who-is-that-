@@ -3,7 +3,8 @@
 Jeu web en français : devine une personnalité historique à partir de son lieu
 et de son année de naissance et de décès, affichés sur une carte du monde.
 
-- Trois niveaux : Facile (50 personnalités), Difficile (50) et Expert (100).
+- Trois niveaux de 120 personnalités : Facile, Difficile et Expert.
+- En français et en anglais (bouton FR / EN sur l'accueil).
 - Deux modes : Partie classique (10 personnalités) et Marathon (3 vies).
 - 45 secondes par personnalité, 100 points + 1 point par seconde restante.
 - Meilleurs scores enregistrés sur l'appareil.
@@ -27,7 +28,10 @@ puis ouvre http://localhost:8000.
 | `js/carte.js` | La carte, les marqueurs et le cadrage automatique |
 | `js/reponses.js` | La reconnaissance des réponses (accents, fautes de frappe) |
 | `data/personnalites.js` | Les personnalités Facile et Difficile : lieux, années, coordonnées, biographies, réponses acceptées |
-| `data/personnalites-expert.js` | Les 100 personnalités Expert |
+| `data/personnalites-expert.js` | Personnalités Expert (première série) |
+| `data/personnalites-ajouts.js` | Personnalités ajoutées dans les trois niveaux (généré à partir de Wikidata) |
+| `data/traductions-en.js`, `data/lieux-en.js` | Noms, biographies et lieux en anglais |
+| `js/i18n.js` | Textes de l'interface en français et en anglais |
 | `data/portraits.js` et `portraits/` | Les portraits libres de droits et leurs crédits |
 | `polices/` | La police Outfit |
 | `data/carte-monde.js` | Les frontières des pays (sans noms) |

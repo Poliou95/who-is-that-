@@ -277,7 +277,7 @@
     P("Cavour", L("Turin", 1810, TURIN), L("Turin", 1861, TURIN),
       "Homme d'État piémontais, principal artisan diplomatique de l'unité italienne.",
       ["cavour", "camillo cavour", "comte de cavour", "camillo benso di cavour"]),
-    P("Sitting Bull", ["Grand River", 1831, 45.700, -101.300, true], ["Fort Yates", 1890, 46.087, -100.630],
+    P("Sitting Bull", ["Grand River", 1831, 45.580, -100.470, true], ["Fort Yates", 1890, 46.087, -100.630],
       "Chef sioux lakota, vainqueur de Custer à Little Bighorn.",
       ["sitting bull", "tatanka iyotake", "taureau assis"]),
     P("Meiji", ["Kyoto", 1852, 35.012, 135.768], L("Tokyo", 1912, TOKYO),

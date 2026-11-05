@@ -162,7 +162,7 @@
       ["richelieu", "cardinal de richelieu", "le cardinal de richelieu"]),
     P("Louis XVI", ["Versailles", 1754, 48.805, 2.120], L("Paris", 1793, PARIS),
       "Dernier roi de France de l'Ancien Régime, guillotiné pendant la Révolution.",
-      ["louis xvi", "louis 16", "louis seize", "louis capet"]),
+      ["louis xvi", "louis 16", "louis capet"]),
     P("Thomas Jefferson", ["Shadwell", 1743, 38.013, -78.417], ["Monticello", 1826, 38.011, -78.453],
       "Principal auteur de la Déclaration d'indépendance et troisième président des États-Unis.",
       ["jefferson", "thomas jefferson"]),

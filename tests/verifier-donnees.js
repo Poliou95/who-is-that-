@@ -15,8 +15,8 @@ function erreur(msg) { erreurs++; console.log("ERREUR : " + msg); }
 var niveaux = window.PERSONNALITES;
 var tous = niveaux.facile.concat(niveaux.difficile, niveaux.expert);
 
-// 1. 50 personnalités en Facile et Difficile, 100 en Expert, sans doublon.
-var attendu = { facile: 50, difficile: 50, expert: 100 };
+// 1. 120 personnalités par niveau, sans doublon.
+var attendu = { facile: 120, difficile: 120, expert: 120 };
 Object.keys(attendu).forEach(function (n) {
   if (niveaux[n].length !== attendu[n]) erreur(n + " contient " + niveaux[n].length + " personnalités au lieu de " + attendu[n]);
 });
@@ -50,7 +50,9 @@ tous.forEach(function (a) {
   });
 });
 
-// 4. Exemples de saisies attendues.
+// 4. Exemples de saisies attendues (français et anglais).
+var T = window.TRADUCTIONS_EN;
+tous.forEach(function (p) { if (!T[p.nom]) erreur(p.nom + " : traduction anglaise manquante"); });
 function trouver(nom) { return tous.filter(function (p) { return p.nom === nom; })[0]; }
 var oui = [
   ["Napoléon Bonaparte", "napoleon"], ["Napoléon Bonaparte", "BONAPARTE"], ["Napoléon Bonaparte", "Napoléon"],
@@ -62,14 +64,19 @@ var oui = [
   ["Gandhi", "ghandi"], ["Atatürk", "ataturk"], ["Hô Chi Minh", "ho chi min"], ["Salvador Dalí", "dali"],
   ["Mikhaïl Gorbatchev", "gorbachev"], ["Louis XIV", "Louis 14"], ["Catherine II", "Catherine II"],
   ["Louis XVI", "louis xvi"], ["Henri IV", "Henri 4"], ["Jean-Sébastien Bach", "bach"], ["Tchaïkovski", "tchaikovsky"],
-  ["Napoléon III", "napoleon III"], ["Lawrence d'Arabie", "Lawrence d’Arabie"], ["Joséphine de Beauharnais", "josephine"]
+  ["Napoléon III", "napoleon III"], ["Lawrence d'Arabie", "Lawrence d’Arabie"], ["Joséphine de Beauharnais", "josephine"],
+  ["Jeanne d'Arc", "Joan of Arc"], ["Léon Tolstoï", "Leo Tolstoy"], ["Lady Diana", "Princess Diana"],
+  ["Le Caravage", "Caravaggio"], ["Platon", "Plato"], ["Kant", "Immanuel Kant"], ["Raspoutine", "Rasputin"],
+  ["Bruce Lee", "bruce lee"], ["Élisabeth II", "Elizabeth II"]
 ];
 var non = [
   ["Martin Luther", "luther"], ["Martin Luther King", "luther"], ["Martin Luther King", "martin luther"],
   ["Napoléon Bonaparte", "louis"], ["Marie Curie", "marie"], ["Louis Pasteur", "louis"], ["Socrate", "platon"],
   ["Claude Monet", "manet"], ["Isaac Newton", ""], ["Mozart", "m"],
   ["Louis XIV", "louis xvi"], ["Louis XVI", "louis xiv"], ["Henri IV", "henri viii"], ["Henri VIII", "henri vii"],
-  ["Napoléon III", "napoleon"], ["Napoléon Bonaparte", "napoleon iii"]
+  ["Napoléon III", "napoleon"], ["Napoléon Bonaparte", "napoleon iii"],
+  ["Catherine II", "catherine"], ["Catherine de Médicis", "catherine"], ["Bruce Lee", "lee"],
+  ["Élisabeth II", "elisabeth ire"], ["Élisabeth Ire", "elisabeth ii"], ["Louis XIII", "louis xvi"]
 ];
 oui.forEach(function (t) { if (!R.estCorrecte(t[1], trouver(t[0]))) erreur("« " + t[1] + " » devrait être accepté pour " + t[0]); });
 non.forEach(function (t) { if (R.estCorrecte(t[1], trouver(t[0]))) erreur("« " + t[1] + " » ne devrait pas être accepté pour " + t[0]); });

@@ -1,11 +1,6 @@
 // Portraits libres de droits ou sous licence libre, issus de Wikimedia Commons.
 // f = fichier dans portraits/, c = crédit affiché, source = page de l'image.
 window.PORTRAITS = {
- "Abd el-Kader": {
-  "f": "abd-el-kader.jpg",
-  "c": "Ange Tissier · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D8%A3%D9%85%D9%8A%D8%B1_%D8%B9%D8%A8%D8%AF_%D8%A7%D9%84%D9%82%D8%A7%D8%AF%D8%B1.jpg"
- },
  "Abraham Lincoln": {
   "f": "abraham-lincoln.jpg",
   "c": "Alexander Gardner · domaine public · Wikimedia Commons",
@@ -16,15 +11,30 @@ window.PORTRAITS = {
   "c": "Bundesarchiv, Bild 183-S33882 / CC BY-SA 3.0 DE · CC BY-SA 3.0 de · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Adolf_Hitler_cropped_restored_3x4.jpg"
  },
- "Akbar": {
-  "f": "akbar.jpg",
-  "c": "1605 artist · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Contemporary_seated_portrait_of_Akbar,_1605.jpg"
+ "Agatha Christie": {
+  "f": "agatha-christie.jpg",
+  "c": "Joop van Bilsen for Anefo · CC0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Agatha_Christie_in_Nederland_(detectiveschrijfster),_bij_aankomst_op_Schiphol_me,_Bestanddeelnr_916-8898_(cropped).jpg"
+ },
+ "Al Capone": {
+  "f": "al-capone.jpg",
+  "c": "Chicago Bureau (Federal Bureau of Investigation) - Wide World Photos. · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Al_Capone_in_1930.jpg"
+ },
+ "Alain Delon": {
+  "f": "alain-delon.jpg",
+  "c": "Reporters Associati & Archivi\\Mondadori · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Alain_Delon_1961.jpg"
  },
  "Alan Turing": {
   "f": "alan-turing.jpg",
   "c": "Elliott & Fry · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Alan_Turing_(1951)_(crop).jpg"
+ },
+ "Albert Camus": {
+  "f": "albert-camus.jpg",
+  "c": "Photograph by United Press International · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Albert_Camus,_gagnant_de_prix_Nobel,_portrait_en_buste,_pos%C3%A9_au_bureau,_faisant_face_%C3%A0_gauche,_cigarette_de_tabagisme.jpg"
  },
  "Albert Einstein": {
   "f": "albert-einstein.jpg",
@@ -36,10 +46,10 @@ window.PORTRAITS = {
   "c": "Albrecht Dürer · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:D%C3%BCrer_Alte_Pinakothek.jpg"
  },
- "Alexander von Humboldt": {
-  "f": "alexander-von-humboldt.jpg",
-  "c": "Joseph Karl Stieler · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Stieler,_Joseph_Karl_-_Alexander_von_Humboldt_-_1843.jpg"
+ "Alexander Fleming": {
+  "f": "alexander-fleming.jpg",
+  "c": "Official photographer · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Synthetic_Production_of_Penicillin_TR1468.jpg"
  },
  "Alexandre Dumas": {
   "f": "alexandre-dumas.jpg",
@@ -51,15 +61,40 @@ window.PORTRAITS = {
   "c": "Auteur inconnu · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Alexander_the_Great_mosaic_(cropped).jpg"
  },
+ "Alfred Hitchcock": {
+  "f": "alfred-hitchcock.jpg",
+  "c": "Ante Brkan · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Hitchcock,_Alfred_02.jpg"
+ },
  "Alfred Nobel": {
   "f": "alfred-nobel.jpg",
   "c": "Auteur inconnu · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:AlfredNobel2.jpg"
  },
+ "Amerigo Vespucci": {
+  "f": "amerigo-vespucci.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Amerigo_Vespucci.jpg"
+ },
  "Andersen": {
   "f": "andersen.jpg",
   "c": "Thora Hallager · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Hans_Christian_Andersen_by_Thora_Hallager_1869.jpg"
+ },
+ "Andy Warhol": {
+  "f": "andy-warhol.jpg",
+  "c": "Bernard Gotfryd · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Andy_Warhol_at_the_Jewish_Museum_(by_Bernard_Gotfryd)_%E2%80%93_LOC.jpg"
+ },
+ "Anne Frank": {
+  "f": "anne-frank.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Anne_Frank_(cropped).jpg"
+ },
+ "Antoine de Saint-Exupéry": {
+  "f": "antoine-de-saint-exupery.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Antoine_de_Saint-Euxpery_(1920).jpg"
  },
  "Antoni Gaudí": {
   "f": "antoni-gaudi.jpg",
@@ -76,6 +111,11 @@ window.PORTRAITS = {
   "c": "After Lysippos · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Aristotle_Altemps_Inv8575.jpg"
  },
+ "Arthur Conan Doyle": {
+  "f": "arthur-conan-doyle.jpg",
+  "c": "Walter Benington · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Arthur_Conan_Doyle_by_Walter_Benington,_1914.png"
+ },
  "Arthur Rimbaud": {
   "f": "arthur-rimbaud.jpg",
   "c": "Étienne Carjat · domaine public · Wikimedia Commons",
@@ -86,20 +126,25 @@ window.PORTRAITS = {
   "c": "Auteur inconnu · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Atat%C3%BCrk_Kemal.jpg"
  },
+ "Audrey Hepburn": {
+  "f": "audrey-hepburn.jpg",
+  "c": "Anefo · CC BY-SA 3.0 nl · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Audrey_Hepburn_in_1966.jpg"
+ },
  "Auguste": {
   "f": "auguste.jpg",
   "c": "Joel Bellviure · CC BY-SA 4.0 · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Augustus_of_Prima_Porta_(inv._2290).jpg"
  },
- "Averroès": {
-  "f": "averroes.jpg",
-  "c": "Saleemzohaib · CC BY 3.0 · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Statue_of_Averroes_in_C%C3%B3rdoba,_Spain.jpg"
+ "Ayrton Senna": {
+  "f": "ayrton-senna.jpg",
+  "c": "Instituto Ayrton Senna, derivative work: F1fans · CC BY 2.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Ayrton_Senna_Pesawat_RC_Cropped.jpg"
  },
- "Avicenne": {
-  "f": "avicenne.jpg",
-  "c": "Original work: Abolhassan Sadighi Depiction: User:Ehsan 1987 · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Pursina.jpg"
+ "Babe Ruth": {
+  "f": "babe-ruth.jpg",
+  "c": "Charles M. Conlon · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Babe_Ruth,_1933.jpg"
  },
  "Balzac": {
   "f": "balzac.jpg",
@@ -121,6 +166,16 @@ window.PORTRAITS = {
   "c": "Auteur inconnu · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Blaise_Pascal_Versailles.JPG"
  },
+ "Bob Marley": {
+  "f": "bob-marley.jpg",
+  "c": "Dennis Morris; Distributed by Island Records · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Bob_Marley_(1976).jpg"
+ },
+ "Bobby Fischer": {
+  "f": "bobby-fischer.jpg",
+  "c": "Bert Verhoeff for Anefo · CC0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Bobby_Fischer_1972_(cropped).jpg"
+ },
  "Botticelli": {
   "f": "botticelli.jpg",
   "c": "Sandro Botticelli · domaine public · Wikimedia Commons",
@@ -131,25 +186,65 @@ window.PORTRAITS = {
   "c": "เทวประภาส มากคล้าย · CC BY-SA 3.0 · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Buddha_in_Sarnath_Museum_(Dhammajak_Mutra).jpg"
  },
- "Carl von Linné": {
-  "f": "carl-von-linne.jpg",
-  "c": "Alexander Roslin · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Carl_von_Linn%C3%A9.jpg"
+ "Bruce Lee": {
+  "f": "bruce-lee.jpg",
+  "c": "National General Pictures · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Bruce_Lee_1973_(cropped).jpg"
+ },
+ "Buddy Holly": {
+  "f": "buddy-holly.jpg",
+  "c": "Buddy_Holly_Brunswick_Records.jpg : Brunswick Records derivative work: GD uwen Tell me! · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Buddy_Holly_cropped.JPG"
+ },
+ "Buffalo Bill": {
+  "f": "buffalo-bill.jpg",
+  "c": "Moffett, Chicago · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Cody-Buffalo-Bill-LOC.jpg"
+ },
+ "Calamity Jane": {
+  "f": "calamity-jane.jpg",
+  "c": "H. R. Locke · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Calamity_jane.jpeg"
+ },
+ "Caligula": {
+  "f": "caligula.jpg",
+  "c": "J. Paul Getty Museum · CC0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Portrait_Head_of_Caligula_-_Getty_Museum_(72.AA.155).jpg"
+ },
+ "Camille Claudel": {
+  "f": "camille-claudel.jpg",
+  "c": "Plombelec · CC BY-SA 4.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Camille_nette.jpg"
+ },
+ "Casanova": {
+  "f": "casanova.jpg",
+  "c": "Francesco Giuseppe Casanova · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Casanova_ritratto.jpg"
  },
  "Catherine II": {
   "f": "catherine-ii.jpg",
   "c": "After Alexander Roslin · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Catherine_II_after_Roslin,_Rokotov_(1780s,_Kunsthistorisches_Museum).jpg"
  },
- "Cavour": {
-  "f": "cavour.jpg",
-  "c": "Léopold-Ernest Mayer, Pierre-Louis Pierson · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:11_Meyer-Pierson.jpg"
+ "Catherine de Médicis": {
+  "f": "catherine-de-medicis.jpg",
+  "c": "Attributed to Germain Le Mannier · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Catarina_de%27_Medici_Uffizi.jpg"
  },
  "Cervantès": {
   "f": "cervantes.jpg",
   "c": "Attributed to Juan de Jáuregui · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Cervantes_J%C3%A1uregui.jpg"
+ },
+ "Charles Aznavour": {
+  "f": "charles-aznavour.jpg",
+  "c": "Mariusz Kubik · CC BY 3.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:2014.06.23._Charles_Aznavour_Fot_Mariusz_Kubik_01.jpg"
+ },
+ "Charles Baudelaire": {
+  "f": "charles-baudelaire.jpg",
+  "c": "Notwist · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Baudelaire_crop.jpg"
  },
  "Charles Darwin": {
   "f": "charles-darwin.jpg",
@@ -160,6 +255,16 @@ window.PORTRAITS = {
   "f": "charles-dickens.jpg",
   "c": "Jeremiah Gurney · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Dickens_Gurney_head.jpg"
+ },
+ "Charles Lindbergh": {
+  "f": "charles-lindbergh.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Col_Charles_Lindbergh,_original,_hec.21329.jpg"
+ },
+ "Charles Perrault": {
+  "f": "charles-perrault.jpg",
+  "c": "Charles Le Brun · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Portrait_de_Charles_Perrault_par_Charles_Le_Brun_(d%C3%A9tail).jpg"
  },
  "Charles Quint": {
   "f": "charles-quint.jpg",
@@ -176,6 +281,16 @@ window.PORTRAITS = {
   "c": "Strauss-Peyton Studio · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Charlie_Chaplin_portrait_Getty_1739411952.jpg"
  },
+ "Charlotte Corday": {
+  "f": "charlotte-corday.jpg",
+  "c": "Jean-Jacques Hauer · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Charlotte_Corday.PNG"
+ },
+ "Chateaubriand": {
+  "f": "chateaubriand.jpg",
+  "c": "Anne-Louis Girodet · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois-Ren%C3%A9_de_Chateaubriand_by_Anne-Louis_Girodet_de_Roucy_Trioson.jpg"
+ },
  "Che Guevara": {
   "f": "che-guevara.jpg",
   "c": "Alberto Korda, restored by Adam Cuerden · domaine public · Wikimedia Commons",
@@ -186,10 +301,20 @@ window.PORTRAITS = {
   "c": "Louis-Auguste Bisson · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Frederic_Chopin_photo.jpeg"
  },
+ "Christian Dior": {
+  "f": "christian-dior.jpg",
+  "c": "投稿者によるスキャン · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Christian_Dior_1954.jpg"
+ },
  "Christophe Colomb": {
   "f": "christophe-colomb.jpg",
   "c": "Ridolfo del Ghirlandaio · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Ridolfo_del_Ghirlandaio_-_Ritratto_di_Cristoforo_Colombo_(1520).jpg"
+ },
+ "Claude François": {
+  "f": "claude-francois.jpg",
+  "c": "Joost Evers for Anefo · CC0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Claude_Francois_1965-4.jpg"
  },
  "Claude Monet": {
   "f": "claude-monet.jpg",
@@ -206,20 +331,40 @@ window.PORTRAITS = {
   "c": "Louis le Grand · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Kleopatra-VII.-Altes-Museum-Berlin1.jpg"
  },
+ "Coco Chanel": {
+  "f": "coco-chanel.jpg",
+  "c": "Los Angeles Times · CC BY 4.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Coco_Chanel_in_Los_Angeles,_1931_(cropped).jpg"
+ },
+ "Coluche": {
+  "f": "coluche.jpg",
+  "c": "© European Union · European Parliament · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Coluche,_1986,_European_Parliament.jpg"
+ },
  "Confucius": {
   "f": "confucius.jpg",
   "c": "Auteur inconnu · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Confucius,_fresco_from_a_Western_Han_tomb_of_Dongping_County,_Shandong_province,_China.jpg"
  },
- "Constantin": {
-  "f": "constantin.jpg",
-  "c": "I, Jean-Christophe BENOIST · CC BY 2.5 · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Rome-Capitole-StatueConstantin.jpg"
- },
  "Copernic": {
   "f": "copernic.jpg",
   "c": "Auteur inconnu · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Nikolaus_Kopernikus_MOT.jpg"
+ },
+ "Custer": {
+  "f": "custer.jpg",
+  "c": "George L. Andrews · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:G_a_custer.jpg"
+ },
+ "Cézanne": {
+  "f": "cezanne.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Paul-Cezanne.jpg"
+ },
+ "Dalida": {
+  "f": "dalida.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Dalida_1974.jpg"
  },
  "Dante": {
   "f": "dante.jpg",
@@ -231,30 +376,120 @@ window.PORTRAITS = {
   "c": "anonymous · CC0 · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Anonyme_-_Portrait_de_Georges_Danton_(1759-1794),_orateur_et_homme_politique_-_P712_-_Mus%C3%A9e_Carnavalet_-_2.jpg"
  },
+ "David Bowie": {
+  "f": "david-bowie.jpg",
+  "c": "Adam Bielawski · CC BY-SA 3.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:David-Bowie_Chicago_2002-08-08_photoby_Adam-Bielawski-cropped.jpg"
+ },
  "David Livingstone": {
   "f": "david-livingstone.jpg",
   "c": "Thomas Annan / Adam Cuerden · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:David_Livingstone_by_Thomas_Annan.jpg"
+ },
+ "Davy Crockett": {
+  "f": "davy-crockett.jpg",
+  "c": "James Hamilton Shegogue, 1806 - 1872 · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_David_Crockett,_1831.jpg"
+ },
+ "Debussy": {
+  "f": "debussy.jpg",
+  "c": "Adam Cuerden · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Claude_Debussy_by_Atelier_Nadar.jpg"
+ },
+ "Degas": {
+  "f": "degas.jpg",
+  "c": "Edgar Degas · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Edgar_Degas_self_portrait_1855FXD.jpg"
+ },
+ "Delacroix": {
+  "f": "delacroix.jpg",
+  "c": "Eugène Delacroix · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Autoportrait_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_25.jpg"
+ },
+ "Diderot": {
+  "f": "diderot.jpg",
+  "c": "Pierre-Michel Alix · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Denis_Diderot_-_Alix_-_Vanloo.png"
+ },
+ "Diego Maradona": {
+  "f": "diego-maradona.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Argentina_celebrando_copa_(cropped).jpg"
  },
  "Edgar Allan Poe": {
   "f": "edgar-allan-poe.jpg",
   "c": "Auteur inconnu · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Edgar_Allan_Poe,_circa_1849,_restored,_squared_off.jpg"
  },
+ "Edvard Munch": {
+  "f": "edvard-munch.jpg",
+  "c": "Anders Beer Wilse · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Edvard_Munch_1933-2.jpg"
+ },
+ "Eisenhower": {
+  "f": "eisenhower.jpg",
+  "c": "White House · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Dwight_D._Eisenhower,_official_photo_portrait,_May_29,_1959.jpg"
+ },
  "Elvis Presley": {
   "f": "elvis-presley.jpg",
   "c": "MGM · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Elvis_Presley_Publicity_Photo_for_The_Trouble_with_Girls_1968.jpg"
+ },
+ "Emiliano Zapata": {
+  "f": "emiliano-zapata.jpg",
+  "c": "Agustín Casasola · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Emiliano_Zapata4.jpg"
+ },
+ "Ennio Morricone": {
+  "f": "ennio-morricone.jpg",
+  "c": "Olivier Strecker · CC BY-SA 3.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Ennio_Morricone_Cannes_2007.jpg"
  },
  "Ernest Hemingway": {
   "f": "ernest-hemingway.jpg",
   "c": "Lloyd Arnold · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:ErnestHemingway.jpg"
  },
- "Ernest Shackleton": {
-  "f": "ernest-shackleton.jpg",
+ "Eusébio": {
+  "f": "eusebio.jpg",
+  "c": "Panini · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Eusebio_en_1973.jpg"
+ },
+ "Eva Perón": {
+  "f": "eva-peron.jpg",
+  "c": "Pinélides Fusco · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Evita_(cropped2).JPG"
+ },
+ "F. Scott Fitzgerald": {
+  "f": "f-scott-fitzgerald.jpg",
+  "c": "Nickolas Muray · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:F._Scott_Fitzgerald_(1929_photo_portrait_by_Nickolas_Muray)_Cropped.jpg"
+ },
+ "Fausto Coppi": {
+  "f": "fausto-coppi.jpg",
+  "c": "J.D. Noske (Anefo) · CC BY-SA 3.0 nl · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Fausto_Coppi,_Tour_de_France_1952_01_(cropped).jpg"
+ },
+ "Federico García Lorca": {
+  "f": "federico-garcia-lorca.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Federico_Garc%C3%ADa_Lorca._Huerta_de_San_Vicente,_Granada.jpg"
+ },
+ "Fellini": {
+  "f": "fellini.jpg",
+  "c": "Walter Albertin, World Telegram staff photographer · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Federico_Fellini_NYWTS_2.jpg"
+ },
+ "Ferdinand de Lesseps": {
+  "f": "ferdinand-de-lesseps.jpg",
   "c": "Nadar · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Ernest_Henry_Shackleton_Nadar.jpg"
+  "source": "https://commons.wikimedia.org/wiki/File:Retrato_de_Ferdinand_de_Lesseps,_por_Felix_Nadar.jpg"
+ },
+ "Ferenc Puskás": {
+  "f": "ferenc-puskas.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Puskas_(1971).tif"
  },
  "Fidel Castro": {
   "f": "fidel-castro.jpg",
@@ -266,15 +501,30 @@ window.PORTRAITS = {
   "c": "Vasily Perov · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg"
  },
+ "Flaubert": {
+  "f": "flaubert.jpg",
+  "c": "Nadar · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Gustave_Flaubert.jpg"
+ },
  "Florence Nightingale": {
   "f": "florence-nightingale.jpg",
   "c": "Henry Hering (1814-1893) · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Florence_Nightingale_(H_Hering_NPG_x82368).jpg"
  },
+ "Francis Drake": {
+  "f": "francis-drake.jpg",
+  "c": "Marcus Gheeraerts the Younger · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Gheeraerts_Francis_Drake_1591.jpg"
+ },
  "Franco": {
   "f": "franco.jpg",
   "c": "Auteur inconnu · CC0 · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:RETRATO_DEL_GRAL._FRANCISCO_FRANCO_BAHAMONDE_(adjusted_levels).jpg"
+ },
+ "Frank Sinatra": {
+  "f": "frank-sinatra.jpg",
+  "c": "Photograph by Capitol Records , per a credit found in the 1959 edition of the International Celeb… · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Frank_Sinatra_(1957_studio_portrait_close-up).jpg"
  },
  "Franklin D. Roosevelt": {
   "f": "franklin-d-roosevelt.jpg",
@@ -291,25 +541,35 @@ window.PORTRAITS = {
   "c": "Jean Clouet · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Ier_Louvre.jpg"
  },
+ "François Mitterrand": {
+  "f": "francois-mitterrand.jpg",
+  "c": "Comet Photo AG (Zürich) · CC BY-SA 4.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:President_Fran%C3%A7ois_Mitterrand_in_1983.jpg"
+ },
+ "François-Joseph": {
+  "f": "francois-joseph.jpg",
+  "c": "Carl Pietzner · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Franz_Joseph_I_of_Austria.1910_(cropped).jpg"
+ },
+ "Freddie Mercury": {
+  "f": "freddie-mercury.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Freddie_Mercury_at_Sheraton_Hotel_Buenos_Aires.jpg"
+ },
  "Frida Kahlo": {
   "f": "frida-kahlo.jpg",
   "c": "Guillermo Kahlo · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Frida_Kahlo,_by_Guillermo_Kahlo_(cropped).jpg"
- },
- "Fridtjof Nansen": {
-  "f": "fridtjof-nansen.jpg",
-  "c": "Henry Van der Weyde · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Fridtjof_Nansen_LOC_03377u-3.jpg"
  },
  "Friedrich Nietzsche": {
   "f": "friedrich-nietzsche.jpg",
   "c": "Friedrich Hermann Hartmann · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Nietzsche187a.jpg"
  },
- "Frédéric le Grand": {
-  "f": "frederic-le-grand.jpg",
-  "c": "Anton Graff · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Friedrich_der_Gro%C3%9Fe_(1781_or_1786)_-_Google_Art_Project.jpg"
+ "Gabriel García Márquez": {
+  "f": "gabriel-garcia-marquez.jpg",
+  "c": "Jose Lara · CC BY-SA 2.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Gabriel_Garcia_Marquez.jpg"
  },
  "Galilée": {
   "f": "galilee.jpg",
@@ -326,10 +586,30 @@ window.PORTRAITS = {
   "c": "Louis-Maurice Boutet de Monvel · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Paul_Gauguin_1891.png"
  },
+ "George Best": {
+  "f": "george-best.jpg",
+  "c": "Hans Peters for Anefo · CC0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:George_Best_(1976).jpg"
+ },
+ "George Michael": {
+  "f": "george-michael.jpg",
+  "c": "University of Houston Digital Library · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:George_Michael.jpeg"
+ },
+ "George Sand": {
+  "f": "george-sand.jpg",
+  "c": "Auguste Charpentier · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:George_Sand.PNG"
+ },
  "George Washington": {
   "f": "george-washington.jpg",
   "c": "Gilbert Stuart · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg"
+ },
+ "Georges Brassens": {
+  "f": "georges-brassens.jpg",
+  "c": "Studio Harcourt. · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Brassens-StudioHarcourt-1957.png"
  },
  "Giuseppe Garibaldi": {
   "f": "giuseppe-garibaldi.jpg",
@@ -341,25 +621,30 @@ window.PORTRAITS = {
   "c": "Joseph Karl Stieler · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Goethe_(Stieler_1828).jpg"
  },
- "Golda Meir": {
-  "f": "golda-meir.jpg",
-  "c": "Talmoryair ( talk ) after Marion S. Trikosko · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Golda_Meir_03265u-2_(cropped).jpg"
- },
  "Goya": {
   "f": "goya.jpg",
   "c": "Vicente López Portaña · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Vicente_L%C3%B3pez_Porta%C3%B1a_-_el_pintor_Francisco_de_Goya.jpg"
+ },
+ "Grace Kelly": {
+  "f": "grace-kelly.jpg",
+  "c": "Hans Peters for Anefo · CC0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Gracia_van_Monaco_(1972).jpg"
  },
  "Graham Bell": {
   "f": "graham-bell.jpg",
   "c": "Moffett Studio · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Alexander_Graham_Bell.jpg"
  },
- "Gregor Mendel": {
-  "f": "gregor-mendel.jpg",
-  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Gregor_Mendel_2.jpg"
+ "Greta Garbo": {
+  "f": "greta-garbo.jpg",
+  "c": "Metro-Goldwyn-Mayer (work for hire) · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Garbo_in_Inspiration.jpg"
+ },
+ "Guillaume II": {
+  "f": "guillaume-ii.jpg",
+  "c": "Studio of Thomas Heinrich Voigt · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Kaiser_Wilhelm_II_of_Germany_-_1902.jpg"
  },
  "Guillaume le Conquérant": {
   "f": "guillaume-le-conquerant.jpg",
@@ -376,11 +661,6 @@ window.PORTRAITS = {
   "c": "Nadar · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Gustave_Eiffel_1888_Nadar2.jpg"
  },
- "Gustave II Adolphe": {
-  "f": "gustave-ii-adolphe.jpg",
-  "c": "Presumably Jacob Hoefnagel · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Attributed_to_Jacob_Hoefnagel_-_Gustavus_Adolphus,_King_of_Sweden_1611-1632_-_Google_Art_Project.jpg"
- },
  "Gutenberg": {
   "f": "gutenberg.jpg",
   "c": "Auteur inconnu · domaine public · Wikimedia Commons",
@@ -391,15 +671,20 @@ window.PORTRAITS = {
   "c": "Attributed to Balthasar Denner · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:George_Frideric_Handel_by_Balthasar_Denner.jpg"
  },
- "Hailé Sélassié": {
-  "f": "haile-selassie.jpg",
-  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Haile_Selassie_in_full_dress.jpg"
- },
  "Hannibal": {
   "f": "hannibal.jpg",
   "c": "Fratelli Alinari · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Mommsen_p265.jpg"
+ },
+ "Harry Truman": {
+  "f": "harry-truman.jpg",
+  "c": "National Archives and Records Administration. Office of Presidential Libraries. Harry S. Truman L… · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:TRUMAN_58-766-06_(cropped).jpg"
+ },
+ "Heath Ledger": {
+  "f": "heath-ledger.jpg",
+  "c": "Howie · CC BY-SA 2.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Heath_Ledger.jpg"
  },
  "Henri IV": {
   "f": "henri-iv.jpg",
@@ -411,60 +696,120 @@ window.PORTRAITS = {
   "c": "Hans Holbein the Younger · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Hans_Holbein,_the_Younger,_Around_1497-1543_-_Portrait_of_Henry_VIII_of_England_-_Google_Art_Project.jpg"
  },
+ "Henry Ford": {
+  "f": "henry-ford.jpg",
+  "c": "Fred Hartsook · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Henry_ford_1919.jpg"
+ },
  "Hernán Cortés": {
   "f": "hernan-cortes.jpg",
   "c": "Auteur inconnu · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Retrato_de_Hern%C3%A1n_Cort%C3%A9s.jpg"
- },
- "Hokusai": {
-  "f": "hokusai.jpg",
-  "c": "missing name · CC0 · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Hokusai_as_an_old_man.jpg"
  },
  "Hô Chi Minh": {
   "f": "ho-chi-minh.jpg",
   "c": "Auteur inconnu · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_1946.jpg"
  },
- "Ibn Khaldoun": {
-  "f": "ibn-khaldoun.jpg",
-  "c": "Reda Kerbush · CC BY-SA 4.0 · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Bust_of_Ibn_Khaldun_(Casbah_of_Bejaia,_Algeria).jpg"
+ "Ingrid Bergman": {
+  "f": "ingrid-bergman.jpg",
+  "c": "Arthur Cantor · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Ingrid_Bergman_The_Constant_Wife_1975_(cropped).JPG"
  },
  "Isaac Newton": {
   "f": "isaac-newton.jpg",
   "c": "Godfrey Kneller · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:GodfreyKneller-IsaacNewton-1689.jpg"
  },
- "Isabelle la Catholique": {
-  "f": "isabelle-la-catholique.jpg",
-  "c": "Juan de Flandes · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Juan_de_Flandes_-_Isabel_la_Cat%C3%B3lica_(Palacio_Real,_Madrid,_1500-04._%C3%93leo_sobre_tabla,_63_x_55_cm).jpg"
- },
  "Ivan le Terrible": {
   "f": "ivan-le-terrible.jpg",
   "c": "Auteur inconnu · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Ivan_grozny_frame.jpg"
+ },
+ "J.R.R. Tolkien": {
+  "f": "j-r-r-tolkien.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:J._R._R._Tolkien,_ca._1925.jpg"
+ },
+ "Jack London": {
+  "f": "jack-london.jpg",
+  "c": "published by L C Page and Company Boston 1903 · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Jack_London_young.jpg"
+ },
+ "Jackson Pollock": {
+  "f": "jackson-pollock.jpg",
+  "c": "Hans Namuth · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Jackson_Pollock_by_Hans_Namuth.jpg"
+ },
+ "Jacques Anquetil": {
+  "f": "jacques-anquetil.jpg",
+  "c": "Nationaal Archief · No restrictions · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Jacques_Anquetil_1963.jpg"
+ },
+ "Jacques Brel": {
+  "f": "jacques-brel.jpg",
+  "c": "Jack de Nijs for Anefo · CC BY-SA 3.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Jacques_Brel_(1962).jpg"
  },
  "Jacques Cartier": {
   "f": "jacques-cartier.jpg",
   "c": "Théophile Hamel / After François Nicholas Riss · CC BY-SA 4.0 · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Jacques_Cartier_1851-1852.jpg"
  },
+ "Jacques Chirac": {
+  "f": "jacques-chirac.jpg",
+  "c": "© European Communities , 1997 · CC BY 4.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Jacques_Chirac_(1997)_(cropped).jpg"
+ },
+ "Jacques-Yves Cousteau": {
+  "f": "jacques-yves-cousteau.jpg",
+  "c": "Hans Peters for Anefo . · CC0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Cousteau1972_(cropped).jpg"
+ },
  "James Cook": {
   "f": "james-cook.jpg",
   "c": "Nathaniel Dance-Holland · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Captainjamescookportrait.jpg"
+ },
+ "James Dean": {
+  "f": "james-dean.jpg",
+  "c": "In-house publicity still · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:James_Dean_in_Rebel_Without_a_Cause.jpg"
+ },
+ "Jane Austen": {
+  "f": "jane-austen.jpg",
+  "c": "Cassandra Austen · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:CassandraAusten-JaneAusten(c.1810)_hires.jpg"
+ },
+ "Janis Joplin": {
+  "f": "janis-joplin.jpg",
+  "c": "Grossman Glotzer Management Corporation · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Janis_Joplin_1970.JPG"
  },
  "Jawaharlal Nehru": {
   "f": "jawaharlal-nehru.jpg",
   "c": "Keystone View Company/FPG · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Jawaharlal_Nehru,_circa_1925.jpg"
  },
+ "Jean Calvin": {
+  "f": "jean-calvin.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:John_Calvin_Museum_Catharijneconvent_RMCC_s84_cropped.png"
+ },
+ "Jean Gabin": {
+  "f": "jean-gabin.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Jean_Gabin_1958.jpg"
+ },
  "Jean Jaurès": {
   "f": "jean-jaures.jpg",
   "c": "Nadar · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Jean_Jaur%C3%A8s,_1904,_par_Nadar.jpg"
+ },
+ "Jean Moulin": {
+  "f": "jean-moulin.jpg",
+  "c": "Studio Harcourt · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Moulin_Harcourt_1937.jpg"
  },
  "Jean Racine": {
   "f": "jean-racine.jpg",
@@ -481,6 +826,26 @@ window.PORTRAITS = {
   "c": "Maurice Quentin de La Tour · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Jean-Jacques_Rousseau_(painted_portrait).jpg"
  },
+ "Jean-Michel Basquiat": {
+  "f": "jean-michel-basquiat.jpg",
+  "c": "Galerie Bruno Bischofberger · CC BY-SA 4.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Andy_Warhol,_Jean-Michel_Basquiat,_Bruno_Bischofberger_and_Fransesco_Clemente,_New_York,_1984_(cropped)_(2).tif"
+ },
+ "Jean-Paul Belmondo": {
+  "f": "jean-paul-belmondo.jpg",
+  "c": "Keystone/Hulton Archive · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Belmondo_1960.jpg"
+ },
+ "Jean-Paul II": {
+  "f": "jean-paul-ii.jpg",
+  "c": "Gov.pl · CC BY 3.0 pl · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Pope_John_Paul_II_smile.jpg"
+ },
+ "Jean-Paul Sartre": {
+  "f": "jean-paul-sartre.jpg",
+  "c": "Government Press Office (Israel) · CC BY-SA 3.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Flickr_-_Government_Press_Office_(GPO)_-_Jean_Paul_Sartre_and_Simone_De_Beauvoir_welcomed_by_Avraham_Shlonsky_and_Leah_Goldberg_(cropped).jpg"
+ },
  "Jean-Sébastien Bach": {
   "f": "jean-sebastien-bach.jpg",
   "c": "Elias Gottlob Haussmann · domaine public · Wikimedia Commons",
@@ -491,15 +856,80 @@ window.PORTRAITS = {
   "c": "Clément de Fauquembergue · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Contemporaine_afb_jeanne_d_arc.png"
  },
+ "Jesse Owens": {
+  "f": "jesse-owens.jpg",
+  "c": "Acme News Photos · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Jesse_Owens_1936.jpg"
+ },
+ "Jim Morrison": {
+  "f": "jim-morrison.jpg",
+  "c": "Elektra Records · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Jim_Morrison_1969.JPG"
+ },
+ "Jimi Hendrix": {
+  "f": "jimi-hendrix.jpg",
+  "c": "Original photographer unknown · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Jimi_Hendrix_(1967)_(cropped).jpg"
+ },
+ "Joan Miró": {
+  "f": "joan-miro.jpg",
+  "c": "Carl Van Vechten · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Joan_Miro_(cropped).jpg"
+ },
+ "Johan Cruyff": {
+  "f": "johan-cruyff.jpg",
+  "c": "Nationaal Archief · CC BY-SA 3.0 nl · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Johan_Cruyff_in_trainingspak_Nederlands_Elftal_,_kop.jpg"
+ },
  "John F. Kennedy": {
   "f": "john-f-kennedy.jpg",
   "c": "Cecil W. Stoughton · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:John_F._Kennedy,_White_House_color_photo_portrait.jpg"
  },
+ "John Lennon": {
+  "f": "john-lennon.jpg",
+  "c": "Tony Barnard, Los Angeles Times · CC BY 4.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:John_Lennon,_1974_(cropped).jpg"
+ },
+ "John Steinbeck": {
+  "f": "john-steinbeck.jpg",
+  "c": "McFadden Publications, Inc.; no photographer credited; photo likely the work of Sonya Noskowiak,… · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:John_Steinbeck_1939_(cropped).jpg"
+ },
+ "John Wayne": {
+  "f": "john-wayne.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:John_Wayne_-_still_portrait.jpg"
+ },
+ "Johnny Cash": {
+  "f": "johnny-cash.jpg",
+  "c": "CBS Television · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Johnny_Cash_%22The_Johnny_Cash_Spring_Special%22_(1979_CBS_press_photo).jpg"
+ },
+ "Johnny Hallyday": {
+  "f": "johnny-hallyday.jpg",
+  "c": "Georges Biard · CC BY-SA 3.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Johnny_Hallyday_2012_3.jpg"
+ },
+ "Jorge Luis Borges": {
+  "f": "jorge-luis-borges.jpg",
+  "c": "Grete Stern · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Jorge_Luis_Borges_1951,_by_Grete_Stern_(full).jpg"
+ },
+ "Joséphine Baker": {
+  "f": "josephine-baker.jpg",
+  "c": "Studio Harcourt · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Baker_Harcourt_1940_2.jpg"
+ },
  "Joséphine de Beauharnais": {
   "f": "josephine-de-beauharnais.jpg",
   "c": "Baron François Gérard (1770 - 1837) – Painter (French) Born in Rome. Died in Paris. Details on Go… · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Baron_Fran%C3%A7ois_G%C3%A9rard_-_Jos%C3%A9phine_in_coronation_costume_-_Google_Art_Project.jpg"
+ },
+ "Juan Manuel Fangio": {
+  "f": "juan-manuel-fangio.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Juan_Manuel_Fangio_(circa_1952).jpg"
  },
  "Jules César": {
   "f": "jules-cesar.jpg",
@@ -511,15 +941,40 @@ window.PORTRAITS = {
   "c": "Nadar · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Nadar_1820-1910_portraits_Jules_Verne.jpg"
  },
+ "Kandinsky": {
+  "f": "kandinsky.jpg",
+  "c": "未知上傳者 · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Wassily_kandinsky.jpg"
+ },
+ "Kant": {
+  "f": "kant.jpg",
+  "c": "Becker · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Immanuel_Kant_-_Gemaelde_2.jpg"
+ },
+ "Karl Lagerfeld": {
+  "f": "karl-lagerfeld.jpg",
+  "c": "Christopher William Adach · CC BY-SA 2.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Karl_Lagerfeld_2014.jpg"
+ },
  "Karl Marx": {
   "f": "karl-marx.jpg",
   "c": "John Jabez Edwin Mayall · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Karl_Marx_001_restored.jpg"
  },
- "Kepler": {
-  "f": "kepler.jpg",
-  "c": "Hans von Aachen · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Johannes_Kepler_by_Hans_von_Aachen.jpg"
+ "Kobe Bryant": {
+  "f": "kobe-bryant.jpg",
+  "c": "Kobe_Bryant_8.jpg : * Kobe_Bryant_7144.jpg : Sgt. Joseph A. Lee derivative work: JoeJohnson2 ( ta… · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:KBryant8.jpg"
+ },
+ "Kurt Cobain": {
+  "f": "kurt-cobain.jpg",
+  "c": "P.B. Rage from USA · CC BY-SA 2.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Nirvana_around_1992_(cropped).jpg"
+ },
+ "L'abbé Pierre": {
+  "f": "l-abbe-pierre.jpg",
+  "c": "Studio Harcourt Paris · CC BY 3.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:ABBE_PIERRE-24x30-1999.jpg"
  },
  "La Fayette": {
   "f": "la-fayette.jpg",
@@ -531,6 +986,11 @@ window.PORTRAITS = {
   "c": "Alexander Bassano · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Queen_Victoria_by_Bassano.jpg"
  },
+ "Lady Diana": {
+  "f": "lady-diana.jpg",
+  "c": "John Mathew Smith & www.celebrity-photos.com · CC BY-SA 2.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Diana,_Princess_of_Wales_1997_(2)_(cropped).jpg"
+ },
  "Lavoisier": {
   "f": "lavoisier.jpg",
   "c": "Jacques-Louis David · domaine public · Wikimedia Commons",
@@ -541,10 +1001,60 @@ window.PORTRAITS = {
   "c": "Harris & Ewing · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Te_lawrence.jpg"
  },
+ "Le Caravage": {
+  "f": "le-caravage.jpg",
+  "c": "Ottavio Leoni · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Bild-Ottavio_Leoni,_Caravaggio.jpg"
+ },
+ "Le Greco": {
+  "f": "le-greco.jpg",
+  "c": "El Greco · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:El_Greco_-_Portrait_of_a_Man_-_WGA10554.jpg"
+ },
+ "Le marquis de Sade": {
+  "f": "le-marquis-de-sade.jpg",
+  "c": "Charles-Amédée-Philippe van Loo · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Marquis_de_sade.jpg"
+ },
+ "Lewis Carroll": {
+  "f": "lewis-carroll.jpg",
+  "c": "Lewis Carroll · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:LewisCarrollSelfPhoto.jpg"
+ },
+ "Liszt": {
+  "f": "liszt.jpg",
+  "c": "Franz Hanfstaengl · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:FLisztFXD.jpg"
+ },
+ "Lord Byron": {
+  "f": "lord-byron.jpg",
+  "c": "Thomas Phillips · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Byron_1813_by_Phillips.jpg"
+ },
+ "Louis Blériot": {
+  "f": "louis-bleriot.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Louis_Bleriot.jpg"
+ },
+ "Louis Braille": {
+  "f": "louis-braille.jpg",
+  "c": "Henri Thiriat · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Engraving_of_Louis_Braille_by_Henri_Thiriat_(cropped).jpg"
+ },
+ "Louis II de Bavière": {
+  "f": "louis-ii-de-baviere.jpg",
+  "c": "Josef Albert · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Albert,_Joseph_-_K%C3%B6nig_Ludwig_II._von_Bayern_(1845-1886)_(Zeno_Fotografie).jpg"
+ },
  "Louis Pasteur": {
   "f": "louis-pasteur.jpg",
   "c": "Paul Nadar · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Louis_Pasteur_(1822_-_1895),_microbiologist_and_chemist_Wellcome_V0026980.jpg"
+ },
+ "Louis XIII": {
+  "f": "louis-xiii.jpg",
+  "c": "Philippe de Champaigne / Formerly attributed to Jan van Belcamp · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:LouisXIII.jpg"
  },
  "Louis XIV": {
   "f": "louis-xiv.jpg",
@@ -555,6 +1065,16 @@ window.PORTRAITS = {
   "f": "louis-xvi.jpg",
   "c": "Didier Descouens · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Ingres-Bourdelle_-_Portrait_de_Louis_XVI_-_Joseph-Siffred_Duplessis_-_Joconde06070000102.jpg"
+ },
+ "Louis de Funès": {
+  "f": "louis-de-funes.jpg",
+  "c": "Marisa Rastellini (Mondadori Publisher) · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Louis_de_Fun%C3%A8s_1970.jpg"
+ },
+ "Lucrèce Borgia": {
+  "f": "lucrece-borgia.jpg",
+  "c": "Attributed to Dosso Dossi · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Dosso_DOSSI_,_Battista_DOSSI_(attributed_to)_-_Lucrezia_Borgia,_Duchess_of_Ferrara_-_Google_Art_Project.jpg"
  },
  "Lénine": {
   "f": "lenine.jpg",
@@ -571,40 +1091,105 @@ window.PORTRAITS = {
   "c": "Attributed to Francesco Melzi · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Francesco_Melzi_-_Portrait_of_Leonardo.png"
  },
+ "Machiavel": {
+  "f": "machiavel.jpg",
+  "c": "Santi di Tito · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg"
+ },
  "Magellan": {
   "f": "magellan.jpg",
   "c": "Auteur inconnu · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Retrato_de_Hernando_de_Magallanes.jpg"
+ },
+ "Magritte": {
+  "f": "magritte.jpg",
+  "c": "Auteur inconnu · CC0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Ren%C3%A9_Magritte_in_1961.jpg"
+ },
+ "Malcolm X": {
+  "f": "malcolm-x.jpg",
+  "c": "Marion S. Trikosko · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Malcolm_X_in_1964.jpg"
  },
  "Mao Zedong": {
   "f": "mao-zedong.jpg",
   "c": "Chen Zhengqing (1917–1966) · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Mao_Tse_Tung.jpg"
  },
+ "Marat": {
+  "f": "marat.jpg",
+  "c": "Joseph Boze · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Jean-Paul_Marat_-_portrait_peint_par_Joseph_Boze.jpg"
+ },
  "Marc Aurèle": {
   "f": "marc-aurele.jpg",
   "c": "Auteur inconnu · CC BY 2.5 · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Marcus_Aurelius_Louvre_MR561_n02.jpg"
+ },
+ "Marc Chagall": {
+  "f": "marc-chagall.jpg",
+  "c": "Pierre Choumoff · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Shagal_Choumoff.jpg"
+ },
+ "Marcel Cerdan": {
+  "f": "marcel-cerdan.jpg",
+  "c": "Cerdan · CC BY-SA 3.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Marcel_Cerdan.jpg"
+ },
+ "Marcel Proust": {
+  "f": "marcel-proust.jpg",
+  "c": "Otto Wegener · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Marcel_Proust_1895.jpg"
  },
  "Marco Polo": {
   "f": "marco-polo.jpg",
   "c": "Salviati · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Marco_Polo_Mosaic_from_Palazzo_Tursi.jpg"
  },
+ "Marconi": {
+  "f": "marconi.jpg",
+  "c": "Pach Brothers · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Guglielmo_Marconi.jpg"
+ },
+ "Margaret Thatcher": {
+  "f": "margaret-thatcher.jpg",
+  "c": "Rob Bogaerts · CC0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Margaret_Thatcher_(1983).jpg"
+ },
+ "Maria Callas": {
+  "f": "maria-callas.jpg",
+  "c": "CBS Television · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Maria_Callas_1958.jpg"
+ },
  "Marie Curie": {
   "f": "marie-curie.jpg",
   "c": "Auteur inconnu · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Marie_Curie_(1900)_(cropped).jpg"
+ },
+ "Marie Stuart": {
+  "f": "marie-stuart.jpg",
+  "c": "Unidentified painter · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Mary_Queen_of_Scots_Blairs_Museum.jpg"
  },
  "Marie-Antoinette": {
   "f": "marie-antoinette.jpg",
   "c": "Élisabeth Louise Vigée Le Brun · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Louise_Elisabeth_Vig%C3%A9e-Lebrun_-_Marie-Antoinette_dit_%C2%AB_%C3%A0_la_Rose_%C2%BB_-_Google_Art_Project.jpg"
  },
+ "Marilyn Monroe": {
+  "f": "marilyn-monroe.jpg",
+  "c": "Sam Shaw · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Marilyn_Monroe_in_How_to_Marry_a_Millionaire.jpg"
+ },
  "Mark Twain": {
   "f": "mark-twain.jpg",
   "c": "Auteur inconnu · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:MarkTwain.LOC.jpg"
+ },
+ "Marlon Brando": {
+  "f": "marlon-brando.jpg",
+  "c": "None visible/Paramount Pictures · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Marlon_Brando_publicity_for_One-Eyed_Jacks.png"
  },
  "Martin Luther": {
   "f": "martin-luther.jpg",
@@ -616,25 +1201,30 @@ window.PORTRAITS = {
   "c": "Associated Press · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:The_Rev._Dr._Martin_Luther_King_Jr._Color_Portrait_(high_quality).jpg"
  },
- "Max Planck": {
-  "f": "max-planck.jpg",
-  "c": "Clendening History of Medicine Library, University of Kansas Medical Center · CC BY-SA 3.0 · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Max_Planck.png"
+ "Mata Hari": {
+  "f": "mata-hari.jpg",
+  "c": "Koene & Com / Batavia-Amsterdam · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Margaretha_Geertruida_MacLeod-Zelle_in_the_Dutch_East_Indies_-_1900.jpg"
  },
- "Mehmed II": {
-  "f": "mehmed-ii.jpg",
-  "c": "16th century artist · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Mehmed_II._Semailname_(Millet_Library,_Ali_Em%C3%AEr%C3%AE_Collection,_History,_MS_no._1216).jpg"
+ "Matisse": {
+  "f": "matisse.jpg",
+  "c": "Carl Van Vechten · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_Henri_Matisse_1933_May_20.jpg"
  },
- "Meiji": {
-  "f": "meiji.jpg",
-  "c": "Uchida Kuichi · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Meiji_Emperor.jpg"
+ "Maupassant": {
+  "f": "maupassant.jpg",
+  "c": "Nadar · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Maupassant_par_Nadar.jpg"
  },
- "Michael Faraday": {
-  "f": "michael-faraday.jpg",
-  "c": "Thomas Phillips · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:M_Faraday_Th_Phillips_oil_1842.jpg"
+ "Mazarin": {
+  "f": "mazarin.jpg",
+  "c": "Pierre Mignard I · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Cardinal_Mazarin_(Pierre_Mignard).jpg"
+ },
+ "Michael Jackson": {
+  "f": "michael-jackson.jpg",
+  "c": "Matthew Rolston; Distributed by Epic Records · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Michael_Jackson_1983_(3x4_cropped)_(contrast).jpg"
  },
  "Michel-Ange": {
   "f": "michel-ange.jpg",
@@ -646,6 +1236,11 @@ window.PORTRAITS = {
   "c": "Leo Medvedev/Лев Леонидович Медведев · CC BY-SA 4.0 · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:GorbachevMS.jpg"
  },
+ "Modigliani": {
+  "f": "modigliani.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Amedeo_Modigliani_1918_restored.jpg"
+ },
  "Molière": {
   "f": "moliere.jpg",
   "c": "Pierre Mignard I · domaine public · Wikimedia Commons",
@@ -656,10 +1251,20 @@ window.PORTRAITS = {
   "c": "anonymous · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Montaigne-Dumonstier.jpg"
  },
+ "Montesquieu": {
+  "f": "montesquieu.jpg",
+  "c": "After Jacques-Antoine Dassier · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Montesquieu_1.png"
+ },
  "Mozart": {
   "f": "mozart.jpg",
   "c": "Barbara Krafft · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Wolfgang-amadeus-mozart_1.jpg"
+ },
+ "Muhammad Ali": {
+  "f": "muhammad-ali.jpg",
+  "c": "Bernard Gotfryd · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Muhammad_Ali,_gtfy.00140.jpg"
  },
  "Mussolini": {
   "f": "mussolini.jpg",
@@ -696,70 +1301,150 @@ window.PORTRAITS = {
   "c": "© copyright John Mathew Smith 2001 · CC BY-SA 2.0 · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Nelson_Mandela_1994.jpg"
  },
+ "Nicolas II": {
+  "f": "nicolas-ii.jpg",
+  "c": "Boissonnas & Eggler · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Nicolas_II_de_russie.jpg"
+ },
+ "Niki Lauda": {
+  "f": "niki-lauda.jpg",
+  "c": "Hans van Dijk for Anefo / neg. stroken, 1945-1989, 2.24.01.05, item number 932-2315 · CC0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Lauda_at_1982_Dutch_Grand_Prix.jpg"
+ },
  "Nikola Tesla": {
   "f": "nikola-tesla.jpg",
   "c": "Napoleon Sarony · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Tesla_circa_1890.jpeg"
+ },
+ "Nostradamus": {
+  "f": "nostradamus.jpg",
+  "c": "After César de Notre-Dame · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Nostradamus_1846.jpg"
  },
  "Néron": {
   "f": "neron.jpg",
   "c": "Jastrow · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Nero_Palatino_Inv618.jpg"
  },
+ "Oliver Cromwell": {
+  "f": "oliver-cromwell.jpg",
+  "c": "After Samuel Cooper · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Oliver_Cromwell_by_Samuel_Cooper.jpg"
+ },
+ "Orson Welles": {
+  "f": "orson-welles.jpg",
+  "c": "Carl Van Vechten · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Orson_Welles_1937_cr3-4.jpg"
+ },
+ "Oscar Wilde": {
+  "f": "oscar-wilde.jpg",
+  "c": "Napoleon Sarony / Adam Cuerden · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Oscar_Wilde_by_Napoleon_Sarony._Three-quarter-length_photograph,_seated.jpg"
+ },
  "Otto von Bismarck": {
   "f": "otto-von-bismarck.jpg",
   "c": "Jacques Pilartz · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-2005-0057,_Otto_von_Bismarck.jpg"
+ },
+ "Pablo Neruda": {
+  "f": "pablo-neruda.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Pablo_Neruda_1963.jpg"
  },
  "Pablo Picasso": {
   "f": "pablo-picasso.jpg",
   "c": "Argentina . Revista Vea y Lea · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Pablo_picasso_1.jpg"
  },
+ "Pancho Villa": {
+  "f": "pancho-villa.jpg",
+  "c": "Bain News Service, publisher. Photographer is unknown. · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Pancho_Villa_bandolier_(cropped).jpg"
+ },
+ "Pavarotti": {
+  "f": "pavarotti.jpg",
+  "c": "Kingkongphoto & www.celebrity-photos.com from Laurel Maryland, USA · CC BY-SA 2.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Luciano_Pavarotti_2004.jpg"
+ },
+ "Pelé": {
+  "f": "pele.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Pele_con_brasil_(cropped).jpg"
+ },
+ "Philippe le Bel": {
+  "f": "philippe-le-bel.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Philip_iv_and_family._2_(detail_crop).jpg"
+ },
+ "Pierre de Coubertin": {
+  "f": "pierre-de-coubertin.jpg",
+  "c": "Photograph from Bain News Service. · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Baron_Pierre_de_Coubertin.jpg"
+ },
  "Pierre le Grand": {
   "f": "pierre-le-grand.jpg",
   "c": "Attributed to Jean-Marc Nattier · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Inconnu_d%27apr%C3%A8s_J.-M._Nattier,_Portrait_de_Pierre_Ier_(mus%C3%A9e_de_l%E2%80%99Ermitage).jpg"
  },
- "Pouchkine": {
-  "f": "pouchkine.jpg",
-  "c": "Orest Kiprensky · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Kiprensky_Pushkin.jpg"
+ "Pizarro": {
+  "f": "pizarro.jpg",
+  "c": "Amable-Paul Coutan · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_Francisco_Pizarro.jpg"
  },
- "Périclès": {
-  "f": "pericles.jpg",
-  "c": "Copy of Ktesilas · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Pericles_Pio-Clementino_Inv269.jpg"
+ "Platon": {
+  "f": "platon.jpg",
+  "c": "© Marie-Lan Nguyen / Wikimedia Commons · CC BY 2.5 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Plato_Silanion_Musei_Capitolini_MC1377.jpg"
  },
- "Pétrarque": {
-  "f": "petrarque.jpg",
-  "c": "Altichiero · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Altichiero,_ritratto_di_Francesco_Petrarca.jpg"
+ "Pocahontas": {
+  "f": "pocahontas.jpg",
+  "c": "Unidentified Artist; copy after Simon van de Passe · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:NPG_65_61_Pocahontas.tif"
+ },
+ "Puccini": {
+  "f": "puccini.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:GiacomoPuccini.jpg"
+ },
+ "Pétain": {
+  "f": "petain.jpg",
+  "c": "Imprimerie Draeger à Montrouge en région parisienne · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:P%C3%A9tain_-_portrait_photographique.jpg"
  },
  "Rabelais": {
   "f": "rabelais.jpg",
   "c": "anonymous / Unidentified painter · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Francois_Rabelais_-_Portrait.jpg"
  },
- "Rabindranath Tagore": {
-  "f": "rabindranath-tagore.jpg",
-  "c": "Generalstabens litografiska anstalt · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Rabindranath_Tagore_in_1909.jpg"
- },
- "Ramanujan": {
-  "f": "ramanujan.jpg",
-  "c": "Konrad Jacobs · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Srinivasa_Ramanujan_-_OPC_-_2_(cleaned).jpg"
- },
  "Raphaël": {
   "f": "raphael.jpg",
   "c": "Raphael · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Raffaello_Sanzio.jpg"
  },
+ "Raspoutine": {
+  "f": "raspoutine.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Rasputin_PA.jpg"
+ },
+ "Ravel": {
+  "f": "ravel.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Maurice_Ravel_1925.jpg"
+ },
+ "Ray Charles": {
+  "f": "ray-charles.jpg",
+  "c": "William Morris Agency (management)/Photo by Maurice Seymour, New York. · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Ray_Charles_classic_piano_pose.jpg"
+ },
  "Rembrandt": {
   "f": "rembrandt.jpg",
   "c": "Rembrandt · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg"
+ },
+ "Renoir": {
+  "f": "renoir.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Pierre_Auguste_Renoir,_uncropped_image.jpg"
  },
  "René Descartes": {
   "f": "rene-descartes.jpg",
@@ -771,15 +1456,15 @@ window.PORTRAITS = {
   "c": "Matthew Paris · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Richard_I_of_England_in_the_Brief_Abridgement_of_the_Chronicles_of_England.jpg"
  },
+ "Richard Nixon": {
+  "f": "richard-nixon.jpg",
+  "c": "Department of Defense. Department of the Army. Office of the Deputy Chief of Staff for Operations… · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Richard_Nixon_presidential_portrait.jpg"
+ },
  "Richelieu": {
   "f": "richelieu.jpg",
   "c": "Philippe de Champaigne · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Cardinal_de_Richelieu.jpg"
- },
- "Robert Koch": {
-  "f": "robert-koch.jpg",
-  "c": "Wilhelm Fechner · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Robert_Koch.jpg"
  },
  "Robert Oppenheimer": {
   "f": "robert-oppenheimer.jpg",
@@ -791,10 +1476,35 @@ window.PORTRAITS = {
   "c": "Unidentified painter · CC0 · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Robespierre.jpg"
  },
+ "Robin Williams": {
+  "f": "robin-williams.jpg",
+  "c": "Eva Rinaldi · CC BY-SA 2.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Robin_Williams_2011a_(2).jpg"
+ },
  "Rodin": {
   "f": "rodin.jpg",
   "c": "Nadar · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Auguste_Rodin_fotografato_da_Nadar_nel_1891.jpg"
+ },
+ "Rommel": {
+  "f": "rommel.jpg",
+  "c": "Bundesarchiv, Bild 183-J16362 / Winkelmann / CC-BY-SA 3.0 · CC BY-SA 3.0 de · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-J16362,_Erwin_Rommel.jpg"
+ },
+ "Romy Schneider": {
+  "f": "romy-schneider.jpg",
+  "c": "Studio Harcourt. · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:RomySchneider-StudioHarcourt-1960.png"
+ },
+ "Ronald Reagan": {
+  "f": "ronald-reagan.jpg",
+  "c": "Michael Evans · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Ronald_Reagan_1981_presidential_portrait.jpg"
+ },
+ "Rosa Luxemburg": {
+  "f": "rosa-luxemburg.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Rosa_Luxemburg.jpg"
  },
  "Rosa Parks": {
   "f": "rosa-parks.jpg",
@@ -805,6 +1515,21 @@ window.PORTRAITS = {
   "f": "rubens.jpg",
   "c": "Peter Paul Rubens · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Sir_Peter_Paul_Rubens_-_Portrait_of_the_Artist_-_Google_Art_Project.jpg"
+ },
+ "Rudyard Kipling": {
+  "f": "rudyard-kipling.jpg",
+  "c": "Bain News Service, publisher · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Kipling_nd.jpg"
+ },
+ "Saddam Hussein": {
+  "f": "saddam-hussein.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Saddam_Hussein_at_trial,_July_2004.JPEG"
+ },
+ "Saint François d'Assise": {
+  "f": "saint-francois-d-assise.jpg",
+  "c": "Parzi · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:StFrancis_part.jpg"
  },
  "Saint Louis": {
   "f": "saint-louis.jpg",
@@ -821,30 +1546,40 @@ window.PORTRAITS = {
   "c": "Van Vechten, Carl, 1880-1964. · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Salvador_Dal%C3%AD_1939.jpg"
  },
- "Samuel de Champlain": {
-  "f": "samuel-de-champlain.jpg",
-  "c": "Samuel de Champlain · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Samchamprifle.jpg"
+ "Schubert": {
+  "f": "schubert.jpg",
+  "c": "Wilhelm August Rieder · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Franz_Schubert_by_Wilhelm_August_Rieder_1875_larger_version.png"
  },
- "Shah Jahan": {
-  "f": "shah-jahan.jpg",
-  "c": "Bichitr · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:%27Jujhar_Singh_Bundela_Kneels_in_Submission_to_Shah_Jahan%27,_painted_by_Bichitr,_c._1630,_Chester_Beatty_Library_(cropped2).jpg"
- },
- "Shaka": {
-  "f": "shaka.jpg",
-  "c": "James King · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:KingShaka.jpg"
+ "Serge Gainsbourg": {
+  "f": "serge-gainsbourg.jpg",
+  "c": "Claude Truong-Ngoc / Wikimedia Commons - cc-by-sa-3.0 · CC BY-SA 3.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Serge_Gainsbourg_par_Claude_Truong-Ngoc_1981.jpg"
  },
  "Sigmund Freud": {
   "f": "sigmund-freud.jpg",
   "c": "Max Halberstadt · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Sigmund_Freud,_by_Max_Halberstadt_(cropped).jpg"
  },
+ "Simone Veil": {
+  "f": "simone-veil.jpg",
+  "c": "Marie-Lan Nguyen ( User:Jastrow ) · CC BY 3.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Simone_Veil,_gymnase_Japy_2008_02_27_n3_ret.jpg"
+ },
+ "Simone de Beauvoir": {
+  "f": "simone-de-beauvoir.jpg",
+  "c": "Moshe Milner · CC BY-SA 3.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Simone_de_Beauvoir2.png"
+ },
  "Simón Bolívar": {
   "f": "simon-bolivar.jpg",
   "c": "Ricardo Acevedo Bernal · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Sim%C3%B3n_Bol%C3%ADvar_by_Acevedo_Bernal,_1922.jpg"
+ },
+ "Sissi": {
+  "f": "sissi.jpg",
+  "c": "Emil Rabending · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Isabel_da_%C3%81ustria_1867.jpg"
  },
  "Sitting Bull": {
   "f": "sitting-bull.jpg",
@@ -866,15 +1601,35 @@ window.PORTRAITS = {
   "c": "Franklin D. Roosevelt Library Public Domain Photographs · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:StalinCropped1943.jpg"
  },
- "Sun Yat-sen": {
-  "f": "sun-yat-sen.jpg",
-  "c": "上海波尔照相馆 · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:%E5%AD%99%E4%B8%AD%E5%B1%B1%E8%82%96%E5%83%8F.jpg"
+ "Stanley Kubrick": {
+  "f": "stanley-kubrick.jpg",
+  "c": "Phillip A. Harrington, an American photographer and staffer for Look magazine between 1949–1971 · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg"
  },
- "Tamerlan": {
-  "f": "tamerlan.jpg",
-  "c": "1405-1409 artist · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Timur_seated_(earliest_known_portrait),_Timurid_genealogy,_1405-1409,_Samarkand_(TSMK,_H2152).jpg"
+ "Stendhal": {
+  "f": "stendhal.jpg",
+  "c": "Olof Johan Södermark · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Stendhal.jpg"
+ },
+ "Stephen Hawking": {
+  "f": "stephen-hawking.jpg",
+  "c": "NASA · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Stephen_Hawking.StarChild.jpg"
+ },
+ "Steve Jobs": {
+  "f": "steve-jobs.jpg",
+  "c": "Matthew Yohe at en.wikipedia · CC BY-SA 3.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Steve_Jobs_Headshot_2010-CROP2.jpg"
+ },
+ "Suzanne Lenglen": {
+  "f": "suzanne-lenglen.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Suzanne_Lenglen_02.jpg"
+ },
+ "Talleyrand": {
+  "f": "talleyrand.jpg",
+  "c": "François Gérard · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Charles_Maurice_de_Talleyrand-P%C3%A9rigord_by_Fran%C3%A7ois_G%C3%A9rard,_1808.jpg"
  },
  "Tchaïkovski": {
   "f": "tchaikovski.jpg",
@@ -891,20 +1646,20 @@ window.PORTRAITS = {
   "c": "Rembrandt Peale · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Official_Presidential_portrait_of_Thomas_Jefferson_(by_Rembrandt_Peale,_1800)(cropped).jpg"
  },
- "Titien": {
-  "f": "titien.jpg",
-  "c": "Titian · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Vecellio_di_Gregorio_Tiziano_-_autoritratto.jpg"
+ "Tina Turner": {
+  "f": "tina-turner.jpg",
+  "c": "HBO · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Tina_Turner_Breaks_All_the_Rules.png"
  },
  "Tito": {
   "f": "tito.jpg",
   "c": "Auteur inconnu · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Josip_Broz_Tito_uniform_portrait.jpg"
  },
- "Tokugawa Ieyasu": {
-  "f": "tokugawa-ieyasu.jpg",
-  "c": "Kanō Tan'yū · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Tokugawa_Ieyasu2.JPG"
+ "Toulouse-Lautrec": {
+  "f": "toulouse-lautrec.jpg",
+  "c": "Paul Sescau · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Photolautrec.jpg"
  },
  "Toussaint Louverture": {
   "f": "toussaint-louverture.jpg",
@@ -915,6 +1670,11 @@ window.PORTRAITS = {
   "f": "trotski.jpg",
   "c": "Auteur inconnu · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Leon_Trotsky_(3x4_cropped).jpg"
+ },
+ "Ulysses S. Grant": {
+  "f": "ulysses-s-grant.jpg",
+  "c": "Brady-Handy Photograph Collection, Library of Congress · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Ulysses_S._Grant_1870-1880.jpg"
  },
  "Vasco de Gama": {
   "f": "vasco-de-gama.jpg",
@@ -931,6 +1691,11 @@ window.PORTRAITS = {
   "c": "Ferdinand Mulnier · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Giuseppi_Verdi_by_Ferdinand_Mulnier_c1870.jpg"
  },
+ "Verlaine": {
+  "f": "verlaine.jpg",
+  "c": "Otto Wegener · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Paul_Verlaine.jpeg"
+ },
  "Vermeer": {
   "f": "vermeer.jpg",
   "c": "Johannes Vermeer · domaine public · Wikimedia Commons",
@@ -945,6 +1710,11 @@ window.PORTRAITS = {
   "f": "vincent-van-gogh.jpg",
   "c": "Vincent van Gogh · CC BY-SA 4.0 · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Self-portrait_-_Vincent_van_Gogh.jpg"
+ },
+ "Virginia Woolf": {
+  "f": "virginia-woolf.jpg",
+  "c": "Auteur inconnu · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Virginia_Woolf_1927.jpg"
  },
  "Vivaldi": {
   "f": "vivaldi.jpg",
@@ -971,6 +1741,16 @@ window.PORTRAITS = {
   "c": "Thomas Lawrence · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Sir_Arthur_Wellesley,_1st_Duke_of_Wellington.jpg"
  },
+ "Wernher von Braun": {
+  "f": "wernher-von-braun.jpg",
+  "c": "NASA/MSFC · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Wernher_von_Braun.jpg"
+ },
+ "Whitney Houston": {
+  "f": "whitney-houston.jpg",
+  "c": "PH2 Mark Kettenhofen · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Whitney_Houston_(cropped3).JPEG"
+ },
  "William Shakespeare": {
   "f": "william-shakespeare.jpg",
   "c": "Attributed to John Taylor · domaine public · Wikimedia Commons",
@@ -981,6 +1761,26 @@ window.PORTRAITS = {
   "c": "Auteur inconnu · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Sir_Winston_Churchill_-_19086236948_(restored).jpg"
  },
+ "Yitzhak Rabin": {
+  "f": "yitzhak-rabin.jpg",
+  "c": "Yaakov Saar · CC BY-SA 3.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Flickr_-_Israel_Defense_Forces_-_Life_of_Lt._Gen._Yitzhak_Rabin,_7th_IDF_Chief_of_Staff_in_photos_(11).jpg"
+ },
+ "Youri Gagarine": {
+  "f": "youri-gagarine.jpg",
+  "c": "Mos.ru · CC BY 4.0 · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Yuri_Gagarin_portrait.png"
+ },
+ "Édith Piaf": {
+  "f": "edith-piaf.jpg",
+  "c": "Studio Harcourt · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Piaf_Harcourt_1946_2.jpg"
+ },
+ "Élisabeth II": {
+  "f": "elisabeth-ii.jpg",
+  "c": "Donald McKague · domaine public · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Queen_Elizabeth_II_official_portrait_for_1959_tour_(retouched)_(cropped)_(3-to-4_aspect_ratio).jpg"
+ },
  "Élisabeth Ire": {
   "f": "elisabeth-ire.jpg",
   "c": "Attributed to William Segar / Attributed to George Gower / Formerly attributed to Nicholas Hilliard · domaine public · Wikimedia Commons",
@@ -990,10 +1790,5 @@ window.PORTRAITS = {
   "f": "emile-zola.jpg",
   "c": "Émile Zola · domaine public · Wikimedia Commons",
   "source": "https://commons.wikimedia.org/wiki/File:Emile_Zola_1902.jpg"
- },
- "Érasme": {
-  "f": "erasme.jpg",
-  "c": "Hans Holbein the Younger · domaine public · Wikimedia Commons",
-  "source": "https://commons.wikimedia.org/wiki/File:Holbein-erasmus.jpg"
  }
 };

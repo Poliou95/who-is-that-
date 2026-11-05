@@ -116,11 +116,11 @@
 
     if (memeLieu) {
       marqueurs.push(creerMarqueur(pn, "les-deux", [
-        ligne("naissance", "Naissance", n), ligne("deces", "Décès", d)
-      ], avecLieux ? n.lieu : null));
+        ligne("naissance", Langue.t("naissance"), n), ligne("deces", Langue.t("deces"), d)
+      ], avecLieux ? Langue.lieu(n) : null));
     } else {
-      marqueurs.push(creerMarqueur(pn, "naissance", [ligne("naissance", "Naissance", n)], avecLieux ? n.lieu : null));
-      marqueurs.push(creerMarqueur(pd, "deces", [ligne("deces", "Décès", d)], avecLieux ? d.lieu : null));
+      marqueurs.push(creerMarqueur(pn, "naissance", [ligne("naissance", Langue.t("naissance"), n)], avecLieux ? Langue.lieu(n) : null));
+      marqueurs.push(creerMarqueur(pd, "deces", [ligne("deces", Langue.t("deces"), d)], avecLieux ? Langue.lieu(d) : null));
     }
     cible = [pn, pd];
     recadrer(true);
@@ -168,7 +168,11 @@
         { x: p[0] - lg / 2, y: p[1] - ecart - hg },          // au-dessus
         { x: p[0] - lg / 2, y: p[1] + ecart },               // en dessous
         { x: p[0] + ecart, y: p[1] - hg / 2 },               // à droite
-        { x: p[0] - ecart - lg, y: p[1] - hg / 2 }           // à gauche
+        { x: p[0] - ecart - lg, y: p[1] - hg / 2 },          // à gauche
+        { x: p[0] - 10, y: p[1] - ecart - hg },              // au-dessus, vers la droite
+        { x: p[0] + 10 - lg, y: p[1] - ecart - hg },         // au-dessus, vers la gauche
+        { x: p[0] - 10, y: p[1] + ecart },                   // en dessous, vers la droite
+        { x: p[0] + 10 - lg, y: p[1] + ecart }               // en dessous, vers la gauche
       ];
       // Si l'autre marqueur est au-dessus, on préfère placer cette légende en dessous.
       if (pos.length === 2 && pos[1 - i][1] < p[1]) candidats.unshift(candidats.splice(1, 1)[0]);
@@ -176,6 +180,13 @@
       candidats.forEach(function (c) {
         var r = { x: Math.min(Math.max(c.x, 6), L - lg - 6), y: Math.min(Math.max(c.y, 6), H - hg - 6), l: lg, h: hg };
         var score = Math.abs(r.x - c.x) + Math.abs(r.y - c.y);
+        // Évite de placer la légende du côté de l'autre marqueur.
+        if (pos.length === 2) {
+          var autre = pos[1 - i];
+          var dx = autre[0] - p[0], dy = autre[1] - p[1];
+          var cx = r.x + lg / 2 - p[0], cy = r.y + hg / 2 - p[1];
+          score += Math.max(0, (cx * dx + cy * dy) / Math.max(1, Math.sqrt(dx * dx + dy * dy)));
+        }
         occupes.forEach(function (o) { score += 1000 * recouvrement(r, o); });
         if (score < meilleurScore) { meilleurScore = score; meilleur = r; }
       });
@@ -191,8 +202,8 @@
   }
 
   function formaterAnnee(l) {
-    var t = l.an < 0 ? (-l.an) + "\u00a0av.\u00a0J.-C." : String(l.an);
-    return (l.vers ? "vers\u00a0" : "") + t;
+    var t = l.an < 0 ? (-l.an) + "\u00a0" + Langue.t("avJC") : String(l.an);
+    return (l.vers ? Langue.t("vers") + "\u00a0" : "") + t;
   }
 
   function echapper(s) {

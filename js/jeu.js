@@ -29,14 +29,9 @@
 
   function majAccueil() {
     var niveau = choix("niveau"), mode = choix("mode");
-    $("aide-niveau").textContent = {
-      facile: "50 personnalités très connues. La carte indique le nom des lieux.",
-      difficile: "50 personnalités moins évidentes. La carte n'indique que les années.",
-      expert: "100 savants, artistes, souverains et explorateurs. La carte n'indique que les années."
-    }[niveau];
-    $("aide-mode").textContent = mode === "classique"
-      ? "10 personnalités tirées au hasard."
-      : "Les " + window.PERSONNALITES[niveau].length + " personnalités du niveau, avec 3 vies. Passer ou manquer de temps coûte une vie.";
+    var n = window.PERSONNALITES[niveau].length;
+    $("aide-niveau").textContent = Langue.t({ facile: "aideFacile", difficile: "aideDifficile", expert: "aideExpert" }[niveau], { n: n });
+    $("aide-mode").textContent = Langue.t(mode === "classique" ? "aideClassique" : "aideMarathon", { n: n });
     $("record-accueil").textContent = lireRecord(niveau, mode);
   }
 
@@ -86,7 +81,7 @@
     var html = "";
     for (var i = 0; i < VIES; i++) html += i < partie.vies ? "♥" : '<span class="perdue">♥</span>';
     $("vies").innerHTML = html;
-    $("vies").setAttribute("aria-label", partie.vies + " vie" + (partie.vies > 1 ? "s" : "") + " restante" + (partie.vies > 1 ? "s" : ""));
+    $("vies").setAttribute("aria-label", Langue.t(partie.vies > 1 ? "viesRestantes" : "vieRestante", { n: partie.vies }));
   }
 
   function tempsRestant() {
@@ -123,38 +118,38 @@
       partie.vies--;
       majVies();
     }
-    partie.historique.push({ nom: partie.perso.nom, trouve: issue === "trouve", points: points });
+    partie.historique.push({ perso: partie.perso, trouve: issue === "trouve", points: points });
 
     var verdict = $("verdict");
     verdict.className = "verdict " + (issue === "trouve" ? "gagne" : "perdu");
-    verdict.textContent = issue === "trouve" ? "Bravo ! +" + points + " points"
-      : issue === "passe" ? "Passé" : "Temps écoulé";
+    verdict.textContent = issue === "trouve" ? Langue.t("bravo", { n: points })
+      : Langue.t(issue === "passe" ? "passe" : "temps");
     if (issue !== "trouve" && partie.mode === "marathon") {
-      verdict.textContent += partie.vies > 0 ? " · −1 vie" : " · plus de vie";
+      verdict.textContent += Langue.t(partie.vies > 0 ? "moinsUneVie" : "plusDeVie");
     }
-    $("revelation-nom").textContent = partie.perso.nom;
-    afficherPortrait(partie.perso.nom);
-    $("revelation-bio").textContent = partie.perso.bio;
+    $("revelation-nom").textContent = Langue.nom(partie.perso);
+    afficherPortrait(partie.perso);
+    $("revelation-bio").textContent = Langue.bio(partie.perso);
     $("revelation").hidden = false;
 
     var saisie = $("saisie");
     saisie.blur();
     $("zone-saisie").hidden = true;
     var dernier = partie.index >= partie.ordre.length - 1 || (partie.mode === "marathon" && partie.vies <= 0);
-    $("bouton-suivant").textContent = dernier ? "Voir le résultat" : "Suivant";
+    $("bouton-suivant").textContent = Langue.t(dernier ? "voirResultat" : "suivant");
     $("bouton-suivant").hidden = false;
   }
 
   // Portrait libre de droits, affiché seulement après la réponse.
-  function afficherPortrait(nom) {
-    var info = (window.PORTRAITS || {})[nom];
+  function afficherPortrait(perso) {
+    var info = (window.PORTRAITS || {})[perso.nom];
     var figure = $("portrait"), image = $("portrait-image");
     figure.hidden = !info;
     $("revelation").classList.toggle("avec-portrait", !!info);
     if (!info) { image.removeAttribute("src"); return; }
     image.src = "portraits/" + info.f;
-    image.alt = "Portrait de " + nom;
-    $("portrait-credit").textContent = info.c;
+    image.alt = Langue.t("portraitDe", { nom: Langue.nom(perso) });
+    $("portrait-credit").textContent = Langue.credit(info.c);
   }
 
   function valider(evenement) {
@@ -170,7 +165,7 @@
       saisie.classList.remove("erreur");
       void saisie.offsetWidth; // relance l'animation
       saisie.classList.add("erreur");
-      afficherMessage("Non, réessaie !");
+      afficherMessage(Langue.t("nonReessaie"));
       saisie.focus();
     }
   }
@@ -189,8 +184,7 @@
     var record = Math.max(ancien, partie.score);
     if (partie.score > ancien) ecrireRecord(partie.niveau, partie.mode, partie.score);
 
-    $("fin-mode").textContent = { facile: "Facile", difficile: "Difficile", expert: "Expert" }[partie.niveau] + " · " +
-      (partie.mode === "classique" ? "Partie classique" : "Marathon");
+    $("fin-mode").textContent = Langue.t(partie.niveau) + " · " + Langue.t(partie.mode);
     $("fin-score").textContent = partie.score;
     $("fin-record").textContent = record;
     $("nouveau-record").hidden = !(partie.score > ancien && partie.score > 0);
@@ -201,15 +195,15 @@
       li.className = h.trouve ? "ok" : "ko";
       li.innerHTML = '<span class="signe">' + (h.trouve ? "✓" : "✗") + '</span><span class="recap-nom"></span>' +
         '<span class="points">' + (h.trouve ? "+" + h.points : "0") + "</span>";
-      li.querySelector(".recap-nom").textContent = h.nom;
+      li.querySelector(".recap-nom").textContent = Langue.nom(h.perso);
       $("recap").appendChild(li);
     });
-    $("recap").setAttribute("aria-label", trouves + " trouvée(s) sur " + partie.historique.length);
+    $("recap").setAttribute("aria-label", Langue.t("trouvees", { n: trouves, total: partie.historique.length }));
     montrer("fin");
   }
 
   function quitter() {
-    if (partie && !window.confirm("Quitter la partie en cours ?")) return;
+    if (partie && !window.confirm(Langue.t("confirmerQuitter"))) return;
     cancelAnimationFrame(minuteur);
     partie = null;
     $("saisie").blur();
@@ -238,6 +232,10 @@
   ajusterHauteur();
 
   // ---------- Branchements ----------
+  Langue.appliquer();
+  document.querySelectorAll("[data-langue]").forEach(function (b) {
+    b.addEventListener("click", function () { Langue.definir(b.getAttribute("data-langue")); majAccueil(); });
+  });
   Carte.initialiser($("carte"));
   document.querySelectorAll('input[name="niveau"], input[name="mode"]').forEach(function (r) {
     r.addEventListener("change", majAccueil);

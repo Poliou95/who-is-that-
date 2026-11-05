@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
   <title>Destins</title>
   <meta name="description" content="Devine la personnalité historique à partir de sa naissance et de sa mort.">
-  <meta name="theme-color" content="#f6f1e7">
+  <meta name="theme-color" content="#f6f7f2">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Destins">
@@ -28,6 +28,7 @@
           <div class="segment" role="radiogroup">
             <label><input type="radio" name="niveau" value="facile" checked><span>Facile</span></label>
             <label><input type="radio" name="niveau" value="difficile"><span>Difficile</span></label>
+            <label><input type="radio" name="niveau" value="expert"><span>Expert</span></label>
           </div>
           <p class="aide" id="aide-niveau"></p>
         </fieldset>
@@ -62,9 +63,15 @@
         <div id="carte" class="carte"></div>
         <div class="chrono-texte" id="chrono-texte" role="timer" aria-live="off">45</div>
         <div id="revelation" class="revelation" hidden aria-live="polite">
-          <p class="verdict" id="verdict"></p>
-          <h2 class="nom" id="revelation-nom"></h2>
-          <p class="bio" id="revelation-bio"></p>
+          <figure class="portrait" id="portrait" hidden>
+            <img id="portrait-image" alt="">
+            <figcaption id="portrait-credit"></figcaption>
+          </figure>
+          <div class="revelation-texte">
+            <p class="verdict" id="verdict"></p>
+            <h2 class="nom" id="revelation-nom"></h2>
+            <p class="bio" id="revelation-bio"></p>
+          </div>
         </div>
         <div id="message" class="message" aria-live="assertive"></div>
       </div>
@@ -104,6 +111,8 @@
   <script src="vendor/topojson-client.min.js"></script>
   <script src="data/carte-monde.js"></script>
   <script src="data/personnalites.js"></script>
+  <script src="data/personnalites-expert.js"></script>
+  <script src="data/portraits.js"></script>
   <script src="js/reponses.js"></script>
   <script src="js/carte.js"></script>
   <script src="js/jeu.js"></script>

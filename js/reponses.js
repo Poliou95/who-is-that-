@@ -37,7 +37,7 @@
   // Fautes tolérées selon la longueur de la réponse attendue.
   function tolerance(longueur) {
     if (longueur <= 5) return 0;
-    if (longueur <= 8) return 1;
+    if (longueur <= 9) return 1;
     return 2;
   }
 
@@ -45,11 +45,18 @@
     return [perso.nom].concat(perso.reponses).map(compacter);
   }
 
+  // Les noms avec un numéro (Louis XIV, Henri IV, Mehmed II…) doivent être
+  // tapés exactement, pour ne pas confondre Louis XIV et Louis XVI.
+  var NUMERO = /(^| )([ivx]+|1er|1re|ier|ire|premier|premiere)$|\d$/;
+  function estStricte(v) { return NUMERO.test(normaliser(v)); }
+
   function estCorrecte(saisie, perso) {
     var c = compacter(saisie);
     if (c.length < 2) return false;
-    return variantes(perso).some(function (v) {
-      return distance(c, v) <= tolerance(v.length);
+    var saisieStricte = estStricte(saisie);
+    return [perso.nom].concat(perso.reponses).some(function (brut) {
+      var v = compacter(brut);
+      return distance(c, v) <= (saisieStricte || estStricte(brut) ? 0 : tolerance(v.length));
     });
   }
 

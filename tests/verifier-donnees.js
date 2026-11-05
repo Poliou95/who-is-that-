@@ -2,17 +2,19 @@
 // Lancer avec : node tests/verifier-donnees.js
 global.window = globalThis;
 require("../data/personnalites.js");
+require("../data/personnalites-expert.js");
 var R = require("../js/reponses.js");
 
 var erreurs = 0;
 function erreur(msg) { erreurs++; console.log("ERREUR : " + msg); }
 
 var niveaux = window.PERSONNALITES;
-var tous = niveaux.facile.concat(niveaux.difficile);
+var tous = niveaux.facile.concat(niveaux.difficile, niveaux.expert);
 
-// 1. Exactement 50 personnalités par niveau, sans doublon.
-["facile", "difficile"].forEach(function (n) {
-  if (niveaux[n].length !== 50) erreur(n + " contient " + niveaux[n].length + " personnalités au lieu de 50");
+// 1. 50 personnalités en Facile et Difficile, 100 en Expert, sans doublon.
+var attendu = { facile: 50, difficile: 50, expert: 100 };
+Object.keys(attendu).forEach(function (n) {
+  if (niveaux[n].length !== attendu[n]) erreur(n + " contient " + niveaux[n].length + " personnalités au lieu de " + attendu[n]);
 });
 var noms = {};
 tous.forEach(function (p) {
@@ -54,12 +56,16 @@ var oui = [
   ["Friedrich Nietzsche", "nietzche"], ["Fiodor Dostoïevski", "dostoievsky"], ["Mahomet", "Muhammad"],
   ["Mère Teresa", "mère thérésa"], ["Vincent van Gogh", "Van Gog"], ["Albert Einstein", "einstien"],
   ["Gandhi", "ghandi"], ["Atatürk", "ataturk"], ["Hô Chi Minh", "ho chi min"], ["Salvador Dalí", "dali"],
-  ["Mikhaïl Gorbatchev", "gorbachev"], ["Louis XIV", "Louis 14"], ["Catherine II", "Catherine II"]
+  ["Mikhaïl Gorbatchev", "gorbachev"], ["Louis XIV", "Louis 14"], ["Catherine II", "Catherine II"],
+  ["Louis XVI", "louis xvi"], ["Henri IV", "Henri 4"], ["Jean-Sébastien Bach", "bach"], ["Tchaïkovski", "tchaikovsky"],
+  ["Napoléon III", "napoleon III"], ["Lawrence d'Arabie", "Lawrence d’Arabie"], ["Joséphine de Beauharnais", "josephine"]
 ];
 var non = [
   ["Martin Luther", "luther"], ["Martin Luther King", "luther"], ["Martin Luther King", "martin luther"],
   ["Napoléon Bonaparte", "louis"], ["Marie Curie", "marie"], ["Louis Pasteur", "louis"], ["Socrate", "platon"],
-  ["Claude Monet", "manet"], ["Isaac Newton", ""], ["Mozart", "m"]
+  ["Claude Monet", "manet"], ["Isaac Newton", ""], ["Mozart", "m"],
+  ["Louis XIV", "louis xvi"], ["Louis XVI", "louis xiv"], ["Henri IV", "henri viii"], ["Henri VIII", "henri vii"],
+  ["Napoléon III", "napoleon"], ["Napoléon Bonaparte", "napoleon iii"]
 ];
 oui.forEach(function (t) { if (!R.estCorrecte(t[1], trouver(t[0]))) erreur("« " + t[1] + " » devrait être accepté pour " + t[0]); });
 non.forEach(function (t) { if (R.estCorrecte(t[1], trouver(t[0]))) erreur("« " + t[1] + " » ne devrait pas être accepté pour " + t[0]); });

@@ -29,12 +29,14 @@
 
   function majAccueil() {
     var niveau = choix("niveau"), mode = choix("mode");
-    $("aide-niveau").textContent = niveau === "facile"
-      ? "50 personnalités très connues. La carte indique le nom des lieux."
-      : "50 personnalités moins évidentes. La carte n'indique que les années.";
+    $("aide-niveau").textContent = {
+      facile: "50 personnalités très connues. La carte indique le nom des lieux.",
+      difficile: "50 personnalités moins évidentes. La carte n'indique que les années.",
+      expert: "100 savants, artistes, souverains et explorateurs. La carte n'indique que les années."
+    }[niveau];
     $("aide-mode").textContent = mode === "classique"
       ? "10 personnalités tirées au hasard."
-      : "Toutes les personnalités du niveau, avec 3 vies. Passer ou manquer de temps coûte une vie.";
+      : "Les " + window.PERSONNALITES[niveau].length + " personnalités du niveau, avec 3 vies. Passer ou manquer de temps coûte une vie.";
     $("record-accueil").textContent = lireRecord(niveau, mode);
   }
 
@@ -131,6 +133,7 @@
       verdict.textContent += partie.vies > 0 ? " · −1 vie" : " · plus de vie";
     }
     $("revelation-nom").textContent = partie.perso.nom;
+    afficherPortrait(partie.perso.nom);
     $("revelation-bio").textContent = partie.perso.bio;
     $("revelation").hidden = false;
 
@@ -140,6 +143,18 @@
     var dernier = partie.index >= partie.ordre.length - 1 || (partie.mode === "marathon" && partie.vies <= 0);
     $("bouton-suivant").textContent = dernier ? "Voir le résultat" : "Suivant";
     $("bouton-suivant").hidden = false;
+  }
+
+  // Portrait libre de droits, affiché seulement après la réponse.
+  function afficherPortrait(nom) {
+    var info = (window.PORTRAITS || {})[nom];
+    var figure = $("portrait"), image = $("portrait-image");
+    figure.hidden = !info;
+    $("revelation").classList.toggle("avec-portrait", !!info);
+    if (!info) { image.removeAttribute("src"); return; }
+    image.src = "portraits/" + info.f;
+    image.alt = "Portrait de " + nom;
+    $("portrait-credit").textContent = info.c;
   }
 
   function valider(evenement) {
@@ -174,7 +189,7 @@
     var record = Math.max(ancien, partie.score);
     if (partie.score > ancien) ecrireRecord(partie.niveau, partie.mode, partie.score);
 
-    $("fin-mode").textContent = (partie.niveau === "facile" ? "Facile" : "Difficile") + " · " +
+    $("fin-mode").textContent = { facile: "Facile", difficile: "Difficile", expert: "Expert" }[partie.niveau] + " · " +
       (partie.mode === "classique" ? "Partie classique" : "Marathon");
     $("fin-score").textContent = partie.score;
     $("fin-record").textContent = record;

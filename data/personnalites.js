@@ -415,7 +415,7 @@
       "Révolutionnaire argentin, compagnon de Fidel Castro dans la révolution cubaine, exécuté en Bolivie.",
       ["che guevara", "guevara", "che", "ernesto guevara", "ernesto che guevara", "le che"]),
     P("Mikhaïl Gorbatchev",
-      ["Privolnoïé", 1931, 46.130, 42.000], ["Moscou", 2022, 55.756, 37.617],
+      ["Privolnoïé", 1931, 45.920, 41.310], ["Moscou", 2022, 55.756, 37.617],
       "Dernier dirigeant de l'URSS, dont les réformes conduisirent à la fin de la guerre froide.",
       ["gorbatchev", "mikhail gorbatchev", "gorbachev", "mikhail gorbachev", "gorbi"])
   ];
